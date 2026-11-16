@@ -4,13 +4,13 @@ A TikTok tweak (Theos, iOS)
 ## Features
 
 ### Feed
-No Ads, Auto Play Next Video, Show Progress Bar, Persistent Progress Slider, Faster Feed Scrolling, Show/Hide UI Button, Skip Recommendations, Disable Live Broadcast, Disable Pull-to-refresh, Disable Feed Refresh, Hide Tako Button, Hide AI Videos, Hide Caption/Hashtags, Hide Comments Button, Hide Likes Button, Hide Audio Title, Hide Share Button, Hide Search Button, Hide Account Suggestions, Show Exact Post Timestamp, Show Content Region Badge, Extended Comment Limit
+No Ads, Auto Play Next Video, Show Progress Bar, Persistent Progress Slider, Faster Feed Scrolling, Show/Hide UI Button, Skip Recommendations, Disable Live Broadcast, Disable Pull-to-refresh, Disable Feed Refresh, Hide Tako Button, Hide AI Videos, Hide Caption/Hashtags, Hide Comments Button, Hide Likes Button, Hide Audio Title, Hide Share Button, Hide Search Button, Hide Account Suggestions, Show Exact Post Timestamp, Show Content Region Badge, Extended Comment Limit, Stop Playback, Buttons on Right Side, Show Usernames, Video Like Count, Video Upload Date, Hide Live Button, Hide Download Button (TikTok's native one), Hide Video Button (the tab bar "+"), Hide Find Similar, Hide Feed Tabs (Following/Friends/For You strip), Hide Friends Tab, Hide Profile Tab, Hide Tab Bar Text, Hide UI Button Behavior (ask each time / this video only / all videos)
 
 ### Video & Photos
-Download Videos, Download HD Video, Download Photos (all or a specific one, no watermark), Download Music, Remove Watermark, Copy Description, Copy Video Link, Copy Music Link, Post Stats
+Download Videos, Download HD Video, Download Photos (all or a specific one, no watermark), Download Music, Remove Watermark, Download Button / Share Sheet toggles, Persistent Playback Speed, Copy Description, Copy Video Link, Copy Music Link, Post Stats
 
 ### Comments
-Save Images From Comments, Copy Comment Without Username, Translate Comments, Like/Dislike Comment Confirmation
+Save Images From Comments, Copy Comment Without Username, Translate Comments, Full-Length Comments, Enable Comment Reposts, Like/Dislike Comment Confirmation
 
 ### Stories
 Story Download, Story View Count, Watch Stories Anonymously
@@ -19,19 +19,29 @@ Story Download, Story View Count, Watch Stories Anonymously
 Show Only Favorites
 
 ### Profile
-Show Username Instead Of Name, Save Avatars With Long Press, Copy Profile Info, Exact Follower Count, Exact View Count, Fake Follower/Following Count, Fake Profile Likes, Fake Verified Badge, Visit Profiles Privately, Extended Bio, Lock Favorites, Show/Hide UI Button
+Show Username Instead Of Name, Save Avatars With Long Press, Copy Profile Info, Exact Follower Count, Exact View Count, Fake Follower/Following Count, Fake Profile Likes, Fake Verified Badge, Visit Profiles Privately, Extended Bio, Lock Favorites, Profile Save, Force New Profile UI, Profile Background (Change Background), Delete All Reposts, Show/Hide UI Button
 
 ### Messages
-Hide Typing Indicator, Read Chats Anonymously, Anti Delete Messages, DM Delete Confirmation, Save Media From DMs, Streak Keeper
+Hide Typing Indicator, Read Chats Anonymously, Anti Delete Messages, DM Delete Confirmation, Save Media From DMs, Streak Keeper, Enable Voice Messages
 
 ### Media Vault
 Save Downloads To Vault, Media Vault (browse/share/delete everything saved)
 
+### Privacy & Anonymity
+Ghost Mode (anonymous story views, private profile visits, hidden read receipts and typing indicator in one toggle)
+
 ### Other
-Like Confirmation, Follow Confirmation, Confirm Repost, Confirm Add To Favorites, Confirm Sending Comment, Always Open Safari, Always Upload HD, Region Changing, Disable Sensitive Content, Disable Warnings, Share Sheet For Custom Save Location, App Lock, Lock Chats, Fast Logout, Auto Clear History, OLED Mode, Custom Accent Color, Enable Liquid Glass UI (with separate toggles for buttons/menus, toasts/notices, and modals/sheets), Enable Flex
+Like Confirmation, Follow Confirmation, Confirm Repost, Confirm Add To Favorites, Confirm Sending Comment, Always Open Safari, Always Upload HD, Region Changing, Disable Sensitive Content, Disable Warnings, Share Sheet For Custom Save Location, App Lock, Lock Chats, Fast Logout, Auto Clear History, OLED Mode, Custom Accent Color, Enable Liquid Glass UI (with separate toggles for buttons/menus, toasts/notices, and modals/sheets), Enable Flex, Remove Logged-In Account Limit, Disable Phone Binding Popup, Live Button Action (default / Infinitok settings / playback speed), Custom Font (import/reset a .ttf/.otf/.ttc), Alternate App Icons, Settings Search, Debug Logging & Export/Clear Debug Log, Contributors screen
 
 ## Settings
 Full-screen with a back button and animated open/close. The "Infinitok settings" row inserted into TikTok's own Settings list uses a grey icon.
+
+## Credits
+- [M0d-4](https://github.com/M0d-4) (Mod4) — Maintainer, Developer
+- [faroukbmiled](https://github.com/faroukbmiled) (Ryuk) — Maintainer, Developer
+- [jaydenjcpy](https://github.com/jaydenjcpy) (Jayden) — Maintainer, Developer
+- [raulsaeed](https://github.com/raulsaeed) (raulsaeed)
+- [BandarHL](https://github.com/BandarHL) (BandarHL)
 
 ## Localization
 English and Arabic.
