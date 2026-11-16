@@ -1,0 +1,9 @@
+Package: com.mod4.infinitok
+Name: Infinitok
+Version: 1.0.1
+Architecture: iphoneos-arm
+Description: A TikTok tweak
+Maintainer: mod4
+Author: mod4
+Section: Tweaks
+Depends: mobilesubstrate

@@ -1,0 +1,287 @@
+/* Infinitok Settings — English (base language) */
+
+"settings.title" = "Infinitok Settings";
+
+"section.feed" = "Feed";
+"section.profile" = "Profile";
+"section.confirm" = "Confirm";
+"section.other" = "Other";
+"section.region" = "Region";
+"section.live_button" = "Live Button Function";
+"section.playback_speed" = "Playback Speed";
+"section.developer" = "Developer";
+"section.extra" = "Extra Features";
+
+"extra.save_comment_media.title" = "Save Images From Comments";
+"extra.save_comment_media.detail" = "Long-press images and stickers in comments to save them";
+
+"extra.exact_follower_count.title" = "Exact Follower Count";
+"extra.exact_follower_count.detail" = "Show the exact digit follower count instead of the abbreviated one";
+
+"extra.copy_comment_no_username.title" = "Copy Comment Without Username";
+"extra.copy_comment_no_username.detail" = "Long-press a comment to copy its text, stripping a leading @mention if present";
+
+"extra.post_stats.title" = "Post Stats";
+"extra.post_stats.detail" = "Adds a Post Stats option to the video download menu showing likes, comments, shares, plays and saves";
+
+"extra.hide_tako_button.title" = "Hide Tako Button";
+"extra.hide_tako_button.detail" = "Hides TikTok's AI assistant entry point on the feed";
+
+"extra.translate_comments.title" = "Translate Comments";
+"extra.translate_comments.detail" = "Forces TikTok's own translate button to show on every comment";
+
+
+"extra.hide_ai_videos.title" = "Hide AI Videos";
+"extra.hide_ai_videos.detail" = "Skips feed videos TikTok has labeled as AI-generated content";
+
+"extra.watch_stories_anonymously.title" = "Watch Stories Anonymously";
+"extra.watch_stories_anonymously.detail" = "Skips the network report TikTok sends when you view someone's story";
+
+"extra.visit_profiles_privately.title" = "Visit Profiles Privately";
+"extra.visit_profiles_privately.detail" = "Skips the network report TikTok sends when you visit someone's profile";
+
+"extra.read_chats_anonymously.title" = "Read Chats Anonymously";
+"extra.read_chats_anonymously.detail" = "Skips sending the read receipt when you open a chat";
+
+"extra.story_download.title" = "Story Download";
+"extra.story_download.detail" = "Add a download button to TikTok Stories";
+
+"extra.story_view_count.title" = "Story View Count";
+"extra.story_view_count.detail" = "Show how many people viewed the story";
+
+"extra.hide_typing_indicator.title" = "Hide Typing Indicator";
+"extra.hide_typing_indicator.detail" = "The other person doesn't see that you're typing";
+
+"extra.anti_delete_messages.title" = "Anti Delete Messages";
+"extra.anti_delete_messages.detail" = "Still see a DM's content after the sender deletes/recalls it";
+
+"extra.dm_delete_confirmation.title" = "DM Delete Confirmation";
+"extra.dm_delete_confirmation.detail" = "Ask before deleting a message";
+
+"extra.disable_phone_binding_popup.title" = "Disable Phone Binding Popup";
+"extra.disable_phone_binding_popup.detail" = "Stop TikTok from nagging you to link a phone number";
+
+"extra.save_to_vault.title" = "Save Downloads To Vault";
+"extra.save_to_vault.detail" = "Also copy anything you download into the in-app Media Vault";
+
+"extra.media_vault.title" = "Media Vault";
+"extra.media_vault.detail" = "Browse, share, or delete everything saved to the vault";
+"extra.save_dm_media.title" = "Save Media From DMs";
+"extra.save_dm_media.detail" = "Long-press an image sent in a chat to save it";
+"extra.lock_chats.title" = "Lock Chats";
+"extra.lock_chats.detail" = "Require Face ID/passcode to open your DM inbox";
+
+"extra.lock_favorites.title" = "Lock Favorites";
+"extra.lock_favorites.detail" = "Require Face ID/passcode to open your Favorites";
+
+"extra.disable_feed_refresh.title" = "Disable Feed Refresh";
+"extra.disable_feed_refresh.detail" = "Stop tapping the Home tab again from refreshing the feed";
+
+"extra.exact_view_count.title" = "Exact View Count";
+"extra.exact_view_count.detail" = "Show the exact number of views/likes on your profile grid instead of an abbreviation";
+"extra.confirm_repost.title" = "Confirm Repost";
+"extra.confirm_repost.detail" = "Ask before reposting a video";
+
+"extra.confirm_favorite.title" = "Confirm Add To Favorites";
+"extra.confirm_favorite.detail" = "Ask before saving a video to favorites";
+
+"extra.confirm_send_comment.title" = "Confirm Sending Comment";
+"extra.confirm_send_comment.detail" = "Ask before posting a comment";
+"extra.hide_caption.title" = "Hide Caption/Hashtags";
+"extra.hide_caption.detail" = "Hide the video description text on the feed";
+
+"extra.hide_comments_button.title" = "Hide Comments Button";
+"extra.hide_comments_button.detail" = "Hide the comment button/count on the feed";
+
+"extra.hide_likes_button.title" = "Hide Likes Button";
+"extra.hide_likes_button.detail" = "Hide the like button/count on the feed";
+
+"extra.hide_music.title" = "Hide Audio Title";
+"extra.hide_music.detail" = "Hide the sound/music title on the feed";
+
+"extra.hide_share_button.title" = "Hide Share Button";
+"extra.hide_share_button.detail" = "Hide the share button on the feed";
+
+"extra.hide_search_button.title" = "Hide Search Button";
+"extra.hide_search_button.detail" = "Hide the search icon";
+
+"extra.hide_account_suggestions.title" = "Hide Account Suggestions";
+"extra.hide_account_suggestions.detail" = "Hides cells whose class name suggests a recommended-account card — heuristic, not a confirmed class";
+"extra.hide_live_button.title" = "Hide Live Button";
+"extra.hide_live_button.detail" = "Hides the in-feed LIVE entrance button that jumps into a live stream instead of the video feed";
+"extra.hide_download_button_native.title" = "Hide Download Button";
+"extra.hide_download_button_native.detail" = "Hides TikTok's own native download bar/button on videos";
+"extra.hide_video_button.title" = "Hide Video Button";
+"extra.hide_video_button.detail" = "Hides the tab bar's \"+\" button used to record/post a new video";
+
+
+"extra.fast_logout.title" = "Fast Logout";
+"extra.fast_logout.detail" = "Skip the confirmation when logging out";
+
+"extra.auto_clear_history.title" = "Auto Clear History";
+"extra.auto_clear_history.detail" = "Clears search history shortly after launch — scans for and calls a guessed clear-history method, does nothing if none is found";
+"extra.persistent_progress_slider.title" = "Persistent Progress Slider";
+"extra.persistent_progress_slider.detail" = "Keep a draggable progress bar always visible on videos";
+
+"extra.exact_timestamp.title" = "Show Exact Post Timestamp";
+"extra.exact_timestamp.detail" = "Show the exact time a video was posted, not just a relative date";
+
+"extra.oled_mode.title" = "OLED Mode";
+"extra.oled_mode.detail" = "True black backgrounds and a dark keyboard throughout the app";
+
+"extra.faster_feed_scrolling.title" = "Faster Feed Scrolling";
+"extra.faster_feed_scrolling.detail" = "Reduce scroll deceleration so swiping through the feed feels snappier";
+
+"extra.show_only_favorites.title" = "Show Only Favorites";
+"extra.show_only_favorites.detail" = "Hide sounds/hashtags/users tabs on the Favorites screen, leaving just videos — heuristic by cell class name, not a confirmed API";
+
+
+
+"extra.force_new_profile_ui.title" = "Force New Profile UI";
+"extra.force_new_profile_ui.detail" = "Forces TikTok's in-testing profile redesign on";
+"extra.profile_background_enabled.title" = "Profile Background (Change Background)";
+"extra.profile_background_enabled.detail" = "Unlocks TikTok's profile background / banner editor in Edit Profile for the new profile UI, even on accounts it has not been rolled out to. Takes effect after reopening Edit Profile; uploads are still validated by TikTok's servers.";
+"extra.enable_voice_messages.title" = "Enable Voice Messages";
+"extra.enable_voice_messages.detail" = "Forces on the chat voice message entrance where TikTok has it region-locked";
+"extra.remove_account_limit.title" = "Remove Logged-In Account Limit";
+"extra.remove_account_limit.detail" = "Bypasses TikTok's cap on how many accounts can be logged in at once";
+
+"extra.show_region_badge.title" = "Show Content Region Badge";
+"extra.show_region_badge.detail" = "Show a small flag on feed videos indicating the uploader's region";
+
+"extra.custom_accent_color.title" = "Custom Accent Color";
+"extra.custom_accent_color.detail" = "Use the color picked below as the app's tint color instead of TikTok's default";
+
+"extra.pick_accent_color.title" = "Pick Accent Color";
+"extra.pick_accent_color.detail" = "Opens the system color picker";
+
+/* Added for the data-driven settings rebuild — new sections + previously-unlocalized rows */
+
+"settings.hide_ads.title" = "Hide Ads";
+"settings.hide_ads.detail" = "Hide all ads from the app";
+"settings.download_button.title" = "Download Button";
+"settings.download_button.detail" = "Enable download button for videos";
+"settings.share_sheet.title" = "Share Sheet";
+"settings.share_sheet.detail" = "Enable sharing options in share sheet";
+"settings.remove_watermark.title" = "Remove Watermark";
+"settings.remove_watermark.detail" = "Remove the TikTok watermark from videos";
+"settings.remove_elements_button.title" = "Show/Hide UI Button";
+"settings.remove_elements_button.detail" = "Show or hide the UI button";
+"settings.stop_play.title" = "Stop Playback";
+"settings.stop_play.detail" = "Stop video playback automatically";
+"settings.auto_play.title" = "Auto Play Next Video";
+"settings.auto_play.detail" = "Automatically play the next video";
+"settings.show_porgress_bar.title" = "Show Progress Bar";
+"settings.show_porgress_bar.detail" = "Display progress bar on video playback";
+"settings.buttons_on_right.title" = "Buttons on Right Side";
+"settings.buttons_on_right.detail" = "Move the download and hide-UI buttons to the right side";
+"settings.show_username.title" = "Show Usernames";
+"settings.show_username.detail" = "Display usernames on videos";
+"settings.disable_unsensitive.title" = "Disable Sensitive Content";
+"settings.disable_unsensitive.detail" = "Disable sensitive content filter";
+"settings.disable_warnings.title" = "Disable Warnings";
+"settings.disable_warnings.detail" = "Disable TikTok warnings";
+"settings.disable_live.title" = "Disable Live Streaming";
+"settings.disable_live.detail" = "Disable live video streaming";
+"settings.skip_recommnedations.title" = "Skip Recommendations";
+"settings.skip_recommnedations.detail" = "Skip recommended videos";
+"settings.save_profile.title" = "Profile Save";
+"settings.save_profile.detail" = "Save profile details to clipboard";
+"settings.copy_profile_information.title" = "Profile Copy";
+"settings.copy_profile_information.detail" = "Copy profile information";
+"settings.video_like_count.title" = "Video Like Count";
+"settings.video_like_count.detail" = "Show the number of likes on videos";
+"settings.video_upload_date.title" = "Video Upload Date";
+"settings.video_upload_date.detail" = "Show the date videos were uploaded";
+"settings.like_confirm.title" = "Like Confirmation";
+"settings.like_confirm.detail" = "Confirm before liking a video";
+"settings.like_comment_confirm.title" = "Like Comment Confirmation";
+"settings.like_comment_confirm.detail" = "Confirm before liking a comment";
+"settings.dislike_comment_confirm.title" = "Dislike Comment Confirmation";
+"settings.dislike_comment_confirm.detail" = "Confirm before disliking a comment";
+"settings.follow_confirm.title" = "Follow Confirmation";
+"settings.follow_confirm.detail" = "Confirm before following a user";
+"settings.en_region.title" = "Enable Region Changing";
+"settings.en_region.detail" = "Enable region changing functionality";
+"settings.en_livefunc.title" = "Live Button Action";
+"settings.en_livefunc.detail" = "Change The Default Live Button Action";
+"settings.playback_en.title" = "Playback Speed";
+"settings.playback_en.detail" = "Enable Persistent Playback Speed.";
+"section.privacy" = "Privacy & Anonymity";
+"section.messages" = "Messages";
+"section.media" = "Media & Vault";
+"section.appearance" = "Appearance";
+"section.feed_content" = "Feed Content";
+"section.fake_profile" = "Fake Profile";
+"settings.en_fake.title" = "Enable Fake Changes";
+"settings.en_fake.detail" = "Enable fake profile changes";
+"settings.fake_verify.title" = "Fake Verified";
+"settings.fake_verify.detail" = "Make your account appear verified";
+"settings.extended_bio.title" = "Extended Bio";
+"settings.extended_bio.detail" = "Extend bio section of your profile";
+"settings.extended_comment.title" = "Extended Comments";
+"settings.extended_comment.detail" = "Extend the length of your comments";
+"settings.upload_hd.title" = "Upload HD";
+"settings.upload_hd.detail" = "Upload videos in HD quality";
+"section.security" = "Security";
+"settings.padlock.title" = "App Lock";
+"settings.padlock.detail" = "Lock the app with a passcode";
+"settings.open_in_browser.title" = "Always Open Safari";
+"settings.open_in_browser.detail" = "Always open links in Safari";
+"settings.flex_enabled.title" = "Enable Flex";
+"settings.flex_enabled.detail" = "Developers Only, DON'T touch it if you don't know what you are doing.";
+"settings.debug_logging.title" = "Debug logging";
+"settings.debug_logging.detail" = "Writes Infinitok diagnostics to the device console. Off by default.";
+"settings.export_debug_log.title" = "Export Debug Log";
+"settings.export_debug_log.detail" = "Share the debug log file";
+"settings.export_debug_log.empty_title" = "No Log Yet";
+"settings.export_debug_log.empty_message" = "Nothing has been logged yet. Try reproducing the issue, then export again.";
+"settings.clear_debug_log.title" = "Clear Debug Log";
+"settings.clear_debug_log.confirm_title" = "Clear Debug Log?";
+"settings.clear_debug_log.confirm_message" = "This deletes the log file on this device. This can't be undone.";
+"common.cancel" = "Cancel";
+"common.delete" = "Delete";
+"common.ok" = "OK";
+"common.retry" = "Retry";
+"settings.contributors.title" = "Contributors";
+"settings.contributors.parse_error" = "Couldn't read the contributors list. Try again in a moment.";
+"settings.contributors.empty" = "No contributors found.";
+"settings.search.placeholder" = "Search settings";
+"settings.version_footer" = "Infinitok v%@";
+"settings.app_icon.title" = "App Icon";
+"settings.app_icon.detail" = "Change Infinitok's icon";
+"settings.app_icon.default_name" = "Default";
+"settings.app_icon.selected" = "Selected";
+"settings.app_icon.tap_to_apply" = "Tap to apply";
+"settings.app_icon.footer" = "Icons may take a moment to change on the Home Screen.";
+"settings.app_icon.unsupported" = "This device or install doesn't support alternate icons.";
+"settings.app_icon.signing_error" = "iOS refused the icon change. This usually means SpringBoard cached this app's icon info before the alternate icons existed — try fully restarting your device and try again. If it still fails after that, it's likely a hard restriction on this install method that can't be worked around from inside the tweak.";
+"settings.hide_ui_button_mode.title" = "Hide UI Button Behavior";
+"settings.hide_ui_button_mode.menu" = "Ask Each Time";
+"settings.hide_ui_button_mode.this_video" = "This Video Only";
+"settings.hide_ui_button_mode.all" = "All Videos";
+"extra.ghost_mode.title" = "Ghost Mode";
+"extra.ghost_mode.detail" = "Anonymous story views, private profile visits, hidden chat read receipts and hidden typing indicator, all in one.";
+"extra.hide_feed_tabs.title" = "Hide feed tabs";
+"extra.hide_feed_tabs.detail" = "Hide the Following / Friends / For You tab strip at the top of the feed.";
+"extra.hide_tab_slot_second.title" = "Hide friends tab";
+"extra.hide_tab_slot_second.detail" = "Hide the Friends tab in the bottom bar and re-space the rest.";
+"extra.hide_tab_slot_last.title" = "Hide profile tab";
+"extra.hide_tab_slot_last.detail" = "Hide the Profile tab in the bottom bar and re-space the rest.";
+"extra.full_length_comments.title" = "Full-length comments";
+"extra.full_length_comments.detail" = "Expand long comments fully instead of truncating them.";
+"extra.font_import.title" = "Import custom font";
+"extra.font_import.detail" = "Pick a .ttf, .otf or .ttc file to use as TikTok's font.";
+"extra.font_reset.title" = "Reset custom font";
+"extra.font_reset.detail" = "Go back to TikTok's default font.";
+"extra.delete_all_reposts.title" = "Delete all reposts";
+"extra.delete_all_reposts.detail" = "Remove every video you have reposted.";
+
+"extra.hide_find_similar.title" = "Hide Find Similar";
+
+"extra.hide_tab_bar_text.title" = "Hide tab bar text";
+"extra.hide_tab_bar_text.detail" = "Removes the labels under the tab bar icons.";
+
+"extra.enable_comment_repost.title" = "Enable comment reposts";
+"extra.enable_comment_repost.detail" = "Turns on TikTok's repost-a-comment feature. Restart TikTok after changing.";
+"extra.hide_find_similar.detail" = "Removes the \"Find similar\" / \"Search this image\" buttons on paused videos and the shopping/visual-search tags (e.g. \"Sunglasses >\") drawn over photos.";

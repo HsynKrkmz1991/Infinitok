@@ -1,0 +1,287 @@
+/* Infinitok Settings — العربية */
+
+"settings.title" = "إعدادات Infinitok";
+
+"section.feed" = "الخلاصة";
+"section.profile" = "الملف الشخصي";
+"section.confirm" = "التأكيد";
+"section.other" = "أخرى";
+"section.region" = "المنطقة";
+"section.live_button" = "وظيفة زر البث المباشر";
+"section.playback_speed" = "سرعة التشغيل";
+"section.developer" = "المطوّر";
+"section.extra" = "ميزات إضافية";
+
+"extra.save_comment_media.title" = "حفظ الصور من التعليقات";
+"extra.save_comment_media.detail" = "اضغط مطولاً على صورة أو ملصق في التعليقات لحفظه";
+
+"extra.exact_follower_count.title" = "عدد المتابعين الدقيق";
+"extra.exact_follower_count.detail" = "إظهار العدد الدقيق للمتابعين بدلاً من المختصر";
+
+"extra.copy_comment_no_username.title" = "نسخ التعليق بدون اسم المستخدم";
+"extra.copy_comment_no_username.detail" = "اضغط مطولاً على تعليق لنسخ نصه مع حذف الإشارة @ في البداية إن وجدت";
+
+"extra.post_stats.title" = "إحصائيات المنشور";
+"extra.post_stats.detail" = "يضيف خيار إحصائيات إلى قائمة تنزيل الفيديو يعرض الإعجابات والتعليقات والمشاركات والمشاهدات والحفظ";
+
+"extra.hide_tako_button.title" = "إخفاء زر Tako";
+"extra.hide_tako_button.detail" = "يخفي مدخل مساعد الذكاء الاصطناعي Tako في الخلاصة";
+
+"extra.translate_comments.title" = "ترجمة التعليقات";
+"extra.translate_comments.detail" = "يفرض إظهار زر الترجمة الخاص بتيك توك على كل تعليق";
+
+
+"extra.hide_ai_videos.title" = "إخفاء فيديوهات الذكاء الاصطناعي";
+"extra.hide_ai_videos.detail" = "يتخطى فيديوهات الخلاصة التي يضع عليها تيك توك علامة المحتوى المُنشأ بالذكاء الاصطناعي";
+
+"extra.watch_stories_anonymously.title" = "مشاهدة القصص بشكل مجهول";
+"extra.watch_stories_anonymously.detail" = "يتخطى التقرير الذي يرسله تيك توك عند مشاهدة قصة شخص ما";
+
+"extra.visit_profiles_privately.title" = "زيارة الملفات الشخصية بخصوصية";
+"extra.visit_profiles_privately.detail" = "يتخطى التقرير الذي يرسله تيك توك عند زيارة ملف شخصي";
+
+"extra.read_chats_anonymously.title" = "قراءة المحادثات بشكل مجهول";
+"extra.read_chats_anonymously.detail" = "يتخطى إرسال إشعار القراءة عند فتح محادثة";
+
+"extra.story_download.title" = "تنزيل القصص";
+"extra.story_download.detail" = "إضافة زر تنزيل إلى قصص تيك توك";
+
+"extra.story_view_count.title" = "عدد مشاهدات القصة";
+"extra.story_view_count.detail" = "إظهار عدد الأشخاص الذين شاهدوا القصة";
+
+"extra.hide_typing_indicator.title" = "إخفاء مؤشر الكتابة";
+"extra.hide_typing_indicator.detail" = "لا يرى الشخص الآخر أنك تكتب";
+
+"extra.anti_delete_messages.title" = "منع حذف الرسائل";
+"extra.anti_delete_messages.detail" = "استمر برؤية محتوى الرسالة بعد حذفها من المرسل";
+
+"extra.dm_delete_confirmation.title" = "تأكيد حذف الرسائل";
+"extra.dm_delete_confirmation.detail" = "السؤال قبل حذف رسالة";
+
+"extra.disable_phone_binding_popup.title" = "إيقاف نافذة ربط الهاتف";
+"extra.disable_phone_binding_popup.detail" = "منع تيك توك من مطالبتك بربط رقم هاتف";
+
+"extra.save_to_vault.title" = "حفظ التنزيلات في الخزنة";
+"extra.save_to_vault.detail" = "نسخ كل ما تقوم بتنزيله أيضًا إلى خزنة الوسائط داخل التطبيق";
+
+"extra.media_vault.title" = "خزنة الوسائط";
+"extra.media_vault.detail" = "تصفح أو شارك أو احذف كل ما تم حفظه في الخزنة";
+"extra.save_dm_media.title" = "حفظ الصور من الرسائل";
+"extra.save_dm_media.detail" = "اضغط مطولاً على صورة أُرسلت في محادثة لحفظها";
+"extra.lock_chats.title" = "قفل المحادثات";
+"extra.lock_chats.detail" = "يتطلب Face ID أو رمز المرور لفتح صندوق رسائلك";
+
+"extra.lock_favorites.title" = "قفل المفضلة";
+"extra.lock_favorites.detail" = "يتطلب Face ID أو رمز المرور لفتح المفضلة";
+
+"extra.disable_feed_refresh.title" = "إيقاف تحديث الخلاصة";
+"extra.disable_feed_refresh.detail" = "منع تحديث الخلاصة عند الضغط على تبويب الرئيسية مرة أخرى";
+
+"extra.exact_view_count.title" = "عدد المشاهدات الدقيق";
+"extra.exact_view_count.detail" = "إظهار العدد الدقيق للمشاهدات والإعجابات في شبكة ملفك الشخصي بدلاً من الاختصار";
+"extra.confirm_repost.title" = "تأكيد إعادة النشر";
+"extra.confirm_repost.detail" = "السؤال قبل إعادة نشر فيديو";
+
+"extra.confirm_favorite.title" = "تأكيد الإضافة إلى المفضلة";
+"extra.confirm_favorite.detail" = "السؤال قبل حفظ فيديو في المفضلة";
+
+"extra.confirm_send_comment.title" = "تأكيد إرسال التعليق";
+"extra.confirm_send_comment.detail" = "السؤال قبل نشر تعليق";
+"extra.hide_caption.title" = "إخفاء الوصف/الهاشتاغ";
+"extra.hide_caption.detail" = "إخفاء نص وصف الفيديو في الخلاصة";
+
+"extra.hide_comments_button.title" = "إخفاء زر التعليقات";
+"extra.hide_comments_button.detail" = "إخفاء زر/عداد التعليقات في الخلاصة";
+
+"extra.hide_likes_button.title" = "إخفاء زر الإعجاب";
+"extra.hide_likes_button.detail" = "إخفاء زر/عداد الإعجاب في الخلاصة";
+
+"extra.hide_music.title" = "إخفاء عنوان الصوت";
+"extra.hide_music.detail" = "إخفاء عنوان الصوت/الموسيقى في الخلاصة";
+
+"extra.hide_share_button.title" = "إخفاء زر المشاركة";
+"extra.hide_share_button.detail" = "إخفاء زر المشاركة في الخلاصة";
+
+"extra.hide_search_button.title" = "إخفاء زر البحث";
+"extra.hide_search_button.detail" = "إخفاء أيقونة البحث";
+
+"extra.hide_account_suggestions.title" = "إخفاء الحسابات المقترحة";
+"extra.hide_account_suggestions.detail" = "يخفي الخلايا التي يشير اسم صنفها إلى بطاقة حساب موصى به — أسلوب تخميني وليس صنفًا مؤكدًا";
+"extra.hide_live_button.title" = "إخفاء زر البث المباشر";
+"extra.hide_live_button.detail" = "إخفاء زر الدخول إلى البث المباشر الذي يأخذك إلى بث مباشر بدلاً من مقاطع الفيديو";
+"extra.hide_download_button_native.title" = "إخفاء زر التنزيل";
+"extra.hide_download_button_native.detail" = "إخفاء زر/شريط التنزيل الأصلي من تيك توك";
+"extra.hide_video_button.title" = "إخفاء زر الفيديو";
+"extra.hide_video_button.detail" = "إخفاء زر \"+\" في شريط التبويب المستخدم لتسجيل/نشر فيديو جديد";
+
+
+"extra.fast_logout.title" = "تسجيل خروج سريع";
+"extra.fast_logout.detail" = "تخطي التأكيد عند تسجيل الخروج";
+
+"extra.auto_clear_history.title" = "مسح السجل تلقائيًا";
+"extra.auto_clear_history.detail" = "يمسح سجل البحث بعد فترة قصيرة من فتح التطبيق — يبحث عن طريقة مخمّنة لمسح السجل ويستدعيها، ولا يفعل شيئًا إن لم يجدها";
+"extra.persistent_progress_slider.title" = "شريط تقدم دائم";
+"extra.persistent_progress_slider.detail" = "إبقاء شريط تقدم قابل للسحب ظاهرًا دائمًا على الفيديوهات";
+
+"extra.exact_timestamp.title" = "إظهار وقت النشر الدقيق";
+"extra.exact_timestamp.detail" = "إظهار الوقت الدقيق لنشر الفيديو بدلاً من تاريخ نسبي فقط";
+
+"extra.oled_mode.title" = "وضع OLED";
+"extra.oled_mode.detail" = "خلفيات سوداء بالكامل ولوحة مفاتيح داكنة في جميع أنحاء التطبيق";
+
+"extra.faster_feed_scrolling.title" = "تمرير أسرع للخلاصة";
+"extra.faster_feed_scrolling.detail" = "تقليل تباطؤ التمرير ليصبح الانتقال في الخلاصة أكثر سلاسة";
+
+"extra.show_only_favorites.title" = "إظهار الفيديوهات فقط في المفضلة";
+"extra.show_only_favorites.detail" = "إخفاء تبويبات الأصوات/الهاشتاغ/المستخدمين في المفضلة، مع إبقاء الفيديوهات فقط — أسلوب تخميني بحسب اسم الصنف، وليس واجهة مؤكدة";
+
+
+
+"extra.force_new_profile_ui.title" = "فرض واجهة الملف الشخصي الجديدة";
+"extra.force_new_profile_ui.detail" = "يفرض تفعيل تصميم الملف الشخصي الجديد قيد الاختبار في TikTok";
+"extra.profile_background_enabled.title" = "خلفية الملف الشخصي (تغيير الخلفية)";
+"extra.profile_background_enabled.detail" = "يفتح محرر خلفية/بانر الملف الشخصي في TikTok ضمن تعديل الملف الشخصي للواجهة الجديدة، حتى لو لم يُفعَّل لحسابك. يظهر بعد إعادة فتح تعديل الملف الشخصي؛ ويظل خادم TikTok يتحقق من الصور المرفوعة.";
+"extra.enable_voice_messages.title" = "تفعيل الرسائل الصوتية";
+"extra.enable_voice_messages.detail" = "يفرض تفعيل مدخل الرسائل الصوتية في المحادثات حيث يكون مقيّدًا بالمنطقة";
+"extra.remove_account_limit.title" = "إزالة حد الحسابات المسجّلة";
+"extra.remove_account_limit.detail" = "يتجاوز الحد الذي يفرضه TikTok على عدد الحسابات التي يمكن تسجيل الدخول بها في آنٍ واحد";
+
+"extra.show_region_badge.title" = "إظهار شارة منطقة المحتوى";
+"extra.show_region_badge.detail" = "إظهار علم صغير على فيديوهات الخلاصة يشير إلى منطقة الناشر";
+
+"extra.custom_accent_color.title" = "لون تمييز مخصص";
+"extra.custom_accent_color.detail" = "استخدام اللون المختار أدناه كلون تمييز للتطبيق بدلاً من لون تيك توك الافتراضي";
+
+"extra.pick_accent_color.title" = "اختيار لون التمييز";
+"extra.pick_accent_color.detail" = "يفتح منتقي الألوان الخاص بالنظام";
+
+/* Added for the data-driven settings rebuild — new sections + previously-unlocalized rows */
+
+"settings.hide_ads.title" = "إخفاء الإعلانات";
+"settings.hide_ads.detail" = "إخفاء جميع الإعلانات من التطبيق";
+"settings.download_button.title" = "زر التنزيل";
+"settings.download_button.detail" = "تفعيل زر تنزيل الفيديوهات";
+"settings.share_sheet.title" = "قائمة المشاركة";
+"settings.share_sheet.detail" = "تفعيل خيارات المشاركة في قائمة المشاركة";
+"settings.remove_watermark.title" = "إزالة العلامة المائية";
+"settings.remove_watermark.detail" = "إزالة العلامة المائية لتيك توك من الفيديوهات";
+"settings.remove_elements_button.title" = "زر إظهار/إخفاء الواجهة";
+"settings.remove_elements_button.detail" = "إظهار أو إخفاء زر واجهة المستخدم";
+"settings.stop_play.title" = "إيقاف التشغيل";
+"settings.stop_play.detail" = "إيقاف تشغيل الفيديو تلقائيًا";
+"settings.auto_play.title" = "تشغيل الفيديو التالي تلقائيًا";
+"settings.auto_play.detail" = "تشغيل الفيديو التالي تلقائيًا";
+"settings.show_porgress_bar.title" = "إظهار شريط التقدم";
+"settings.show_porgress_bar.detail" = "إظهار شريط تقدم أثناء تشغيل الفيديو";
+"settings.buttons_on_right.title" = "الأزرار على اليمين";
+"settings.buttons_on_right.detail" = "نقل زري التنزيل وإخفاء الواجهة إلى الجانب الأيمن";
+"settings.show_username.title" = "إظهار أسماء المستخدمين";
+"settings.show_username.detail" = "إظهار أسماء المستخدمين على الفيديوهات";
+"settings.disable_unsensitive.title" = "تعطيل تصفية المحتوى الحساس";
+"settings.disable_unsensitive.detail" = "تعطيل مرشح المحتوى الحساس";
+"settings.disable_warnings.title" = "تعطيل التحذيرات";
+"settings.disable_warnings.detail" = "تعطيل تحذيرات تيك توك";
+"settings.disable_live.title" = "تعطيل البث المباشر";
+"settings.disable_live.detail" = "تعطيل البث المباشر للفيديو";
+"settings.skip_recommnedations.title" = "تخطي التوصيات";
+"settings.skip_recommnedations.detail" = "تخطي الفيديوهات الموصى بها";
+"settings.save_profile.title" = "حفظ الملف الشخصي";
+"settings.save_profile.detail" = "حفظ تفاصيل الملف الشخصي في الحافظة";
+"settings.copy_profile_information.title" = "نسخ الملف الشخصي";
+"settings.copy_profile_information.detail" = "نسخ معلومات الملف الشخصي";
+"settings.video_like_count.title" = "عدد إعجابات الفيديو";
+"settings.video_like_count.detail" = "إظهار عدد الإعجابات على الفيديوهات";
+"settings.video_upload_date.title" = "تاريخ رفع الفيديو";
+"settings.video_upload_date.detail" = "إظهار تاريخ رفع الفيديوهات";
+"settings.like_confirm.title" = "تأكيد الإعجاب";
+"settings.like_confirm.detail" = "التأكيد قبل الإعجاب بفيديو";
+"settings.like_comment_confirm.title" = "تأكيد إعجاب التعليق";
+"settings.like_comment_confirm.detail" = "التأكيد قبل الإعجاب بتعليق";
+"settings.dislike_comment_confirm.title" = "تأكيد عدم إعجاب التعليق";
+"settings.dislike_comment_confirm.detail" = "التأكيد قبل عدم الإعجاب بتعليق";
+"settings.follow_confirm.title" = "تأكيد المتابعة";
+"settings.follow_confirm.detail" = "التأكيد قبل متابعة مستخدم";
+"settings.en_region.title" = "تفعيل تغيير المنطقة";
+"settings.en_region.detail" = "تفعيل وظيفة تغيير المنطقة";
+"settings.en_livefunc.title" = "إجراء زر البث المباشر";
+"settings.en_livefunc.detail" = "تغيير الإجراء الافتراضي لزر البث المباشر";
+"settings.playback_en.title" = "سرعة التشغيل";
+"settings.playback_en.detail" = "تفعيل سرعة تشغيل دائمة.";
+"section.privacy" = "الخصوصية وإخفاء الهوية";
+"section.messages" = "الرسائل";
+"section.media" = "الوسائط والخزنة";
+"section.appearance" = "المظهر";
+"section.feed_content" = "محتوى الخلاصة";
+"section.fake_profile" = "الملف الشخصي المزيف";
+"settings.en_fake.title" = "تفعيل التعديلات المزيفة";
+"settings.en_fake.detail" = "تفعيل تعديلات الملف الشخصي المزيفة";
+"settings.fake_verify.title" = "توثيق مزيف";
+"settings.fake_verify.detail" = "جعل حسابك يبدو موثقًا";
+"settings.extended_bio.title" = "سيرة ذاتية موسّعة";
+"settings.extended_bio.detail" = "توسيع قسم السيرة الذاتية في ملفك الشخصي";
+"settings.extended_comment.title" = "تعليقات موسّعة";
+"settings.extended_comment.detail" = "توسيع طول تعليقاتك";
+"settings.upload_hd.title" = "رفع بجودة عالية";
+"settings.upload_hd.detail" = "رفع الفيديوهات بجودة عالية الدقة";
+"section.security" = "الأمان";
+"settings.padlock.title" = "قفل التطبيق";
+"settings.padlock.detail" = "قفل التطبيق برمز مرور";
+"settings.open_in_browser.title" = "فتح الروابط في سفاري دائمًا";
+"settings.open_in_browser.detail" = "فتح الروابط دائمًا في متصفح سفاري";
+"settings.flex_enabled.title" = "تفعيل Flex";
+"settings.flex_enabled.detail" = "للمطورين فقط، لا تلمسه إذا كنت لا تعرف ما تفعله.";
+"settings.debug_logging.title" = "سجلات التصحيح";
+"settings.debug_logging.detail" = "يكتب تشخيصات Infinitok إلى سجل الجهاز. معطّل افتراضيًا.";
+"settings.export_debug_log.title" = "تصدير سجل التصحيح";
+"settings.export_debug_log.detail" = "مشاركة ملف سجل التصحيح";
+"settings.export_debug_log.empty_title" = "لا يوجد سجل بعد";
+"settings.export_debug_log.empty_message" = "لم يتم تسجيل أي شيء بعد. حاول إعادة إنتاج المشكلة، ثم صدّر مرة أخرى.";
+"settings.clear_debug_log.title" = "مسح سجل التصحيح";
+"settings.clear_debug_log.confirm_title" = "مسح سجل التصحيح؟";
+"settings.clear_debug_log.confirm_message" = "سيؤدي هذا إلى حذف ملف السجل من هذا الجهاز. لا يمكن التراجع عن هذا الإجراء.";
+"common.cancel" = "إلغاء";
+"common.delete" = "حذف";
+"common.ok" = "حسنًا";
+"common.retry" = "إعادة المحاولة";
+"settings.contributors.title" = "المساهمون";
+"settings.contributors.parse_error" = "تعذّرت قراءة قائمة المساهمين. حاول مرة أخرى بعد قليل.";
+"settings.contributors.empty" = "لا يوجد مساهمون.";
+"settings.search.placeholder" = "البحث في الإعدادات";
+"settings.version_footer" = "Infinitok الإصدار %@";
+"settings.app_icon.title" = "أيقونة التطبيق";
+"settings.app_icon.detail" = "تغيير أيقونة Infinitok";
+"settings.app_icon.default_name" = "الافتراضية";
+"settings.app_icon.selected" = "محددة";
+"settings.app_icon.tap_to_apply" = "اضغط للتطبيق";
+"settings.app_icon.footer" = "قد يستغرق تغيير الأيقونة على الشاشة الرئيسية بعض الوقت.";
+"settings.app_icon.unsupported" = "هذا الجهاز أو التثبيت لا يدعم الأيقونات البديلة.";
+"settings.app_icon.signing_error" = "رفض iOS تغيير الأيقونة. عادةً ما يعني هذا أن SpringBoard خزّن معلومات أيقونة التطبيق مؤقتًا قبل وجود الأيقونات البديلة — جرّب إعادة تشغيل جهازك بالكامل ثم أعد المحاولة. إذا استمر الفشل بعد ذلك، فمن المحتمل أن يكون قيدًا صارمًا في طريقة التثبيت هذه لا يمكن التغلب عليه من داخل التعديل.";
+"settings.hide_ui_button_mode.title" = "سلوك زر إخفاء الواجهة";
+"settings.hide_ui_button_mode.menu" = "السؤال في كل مرة";
+"settings.hide_ui_button_mode.this_video" = "هذا الفيديو فقط";
+"settings.hide_ui_button_mode.all" = "جميع الفيديوهات";
+"extra.ghost_mode.title" = "وضع الشبح";
+"extra.ghost_mode.detail" = "مشاهدة القصص بسرية، زيارة الملفات بخصوصية، إخفاء الإيصالات ومؤشر الكتابة في خيار واحد.";
+"extra.hide_feed_tabs.title" = "إخفاء تبويبات الخلاصة";
+"extra.hide_feed_tabs.detail" = "إخفاء شريط تبويبات الخلاصة العلوي.";
+"extra.hide_tab_slot_second.title" = "إخفاء تبويب الأصدقاء";
+"extra.hide_tab_slot_second.detail" = "إخفاء تبويب الأصدقاء من الشريط السفلي وإعادة توزيع الباقي.";
+"extra.hide_tab_slot_last.title" = "إخفاء تبويب الملف الشخصي";
+"extra.hide_tab_slot_last.detail" = "إخفاء تبويب الملف الشخصي من الشريط السفلي وإعادة توزيع الباقي.";
+"extra.full_length_comments.title" = "التعليقات الكاملة";
+"extra.full_length_comments.detail" = "عرض التعليقات الطويلة بالكامل.";
+"extra.font_import.title" = "استيراد خط مخصص";
+"extra.font_import.detail" = "اختر ملف ttf أو otf أو ttc لاستخدامه.";
+"extra.font_reset.title" = "إعادة الخط الافتراضي";
+"extra.font_reset.detail" = "العودة إلى خط تيك توك الافتراضي.";
+"extra.delete_all_reposts.title" = "حذف كل إعادات النشر";
+"extra.delete_all_reposts.detail" = "إزالة كل الفيديوهات التي أعدت نشرها.";
+
+"extra.hide_find_similar.title" = "إخفاء زر البحث عن مشابه";
+
+"extra.hide_tab_bar_text.title" = "إخفاء نص شريط التبويب";
+"extra.hide_tab_bar_text.detail" = "يزيل النصوص أسفل أيقونات شريط التبويب.";
+
+"extra.enable_comment_repost.title" = "تفعيل إعادة نشر التعليقات";
+"extra.enable_comment_repost.detail" = "يفعّل ميزة إعادة نشر التعليق في TikTok. أعد تشغيل TikTok بعد التغيير.";
+"extra.hide_find_similar.detail" = "يزيل أزرار \"البحث عن مشابه\" / \"البحث بهذه الصورة\" عند إيقاف الفيديو، وعلامات البحث المرئي/التسوق فوق الصور.";

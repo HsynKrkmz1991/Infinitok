@@ -1,0 +1,44 @@
+# Infinitok
+A TikTok tweak (Theos, iOS)
+
+## Features
+
+### Feed
+No Ads, Auto Play Next Video, Show Progress Bar, Persistent Progress Slider, Faster Feed Scrolling, Show/Hide UI Button, Skip Recommendations, Disable Live Broadcast, Disable Pull-to-refresh, Disable Feed Refresh, Hide Tako Button, Hide AI Videos, Hide Caption/Hashtags, Hide Comments Button, Hide Likes Button, Hide Audio Title, Hide Share Button, Hide Search Button, Hide Account Suggestions, Show Exact Post Timestamp, Show Content Region Badge, Extended Comment Limit
+
+### Video & Photos
+Download Videos, Download HD Video, Download Photos (all or a specific one, no watermark), Download Music, Remove Watermark, Copy Description, Copy Video Link, Copy Music Link, Post Stats
+
+### Comments
+Save Images From Comments, Copy Comment Without Username, Translate Comments, Like/Dislike Comment Confirmation
+
+### Stories
+Story Download, Story View Count, Watch Stories Anonymously
+
+### Favorites
+Show Only Favorites
+
+### Profile
+Show Username Instead Of Name, Save Avatars With Long Press, Copy Profile Info, Exact Follower Count, Exact View Count, Fake Follower/Following Count, Fake Profile Likes, Fake Verified Badge, Visit Profiles Privately, Extended Bio, Lock Favorites, Show/Hide UI Button
+
+### Messages
+Hide Typing Indicator, Read Chats Anonymously, Anti Delete Messages, DM Delete Confirmation, Save Media From DMs, Streak Keeper
+
+### Media Vault
+Save Downloads To Vault, Media Vault (browse/share/delete everything saved)
+
+### Other
+Like Confirmation, Follow Confirmation, Confirm Repost, Confirm Add To Favorites, Confirm Sending Comment, Always Open Safari, Always Upload HD, Region Changing, Disable Sensitive Content, Disable Warnings, Share Sheet For Custom Save Location, App Lock, Lock Chats, Fast Logout, Auto Clear History, OLED Mode, Custom Accent Color, Enable Liquid Glass UI (with separate toggles for buttons/menus, toasts/notices, and modals/sheets), Enable Flex
+
+## Settings
+Full-screen with a back button and animated open/close. The "Infinitok settings" row inserted into TikTok's own Settings list uses a grey icon.
+
+## Localization
+English and Arabic.
+
+## CI: Build & Inject
+`.github/workflows/build-and-inject.yml`, manually triggered. Inputs:
+- `ipa_url` — a decrypted TikTok `.ipa` you own. Leave empty to just build the `.deb`.
+- `upload_to_filebin` — uploads the built `.ipa` to filebin.net.
+- `create_release` — publishes a GitHub Release with the download link.
+- `patch_sideload` — patches the `.ipa` with [ipapatch](https://github.com/asdfzxcvbn/ipapatch) (zxPluginsInject) for sideloading.

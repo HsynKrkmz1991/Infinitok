@@ -1,0 +1,28 @@
+[
+    {
+        "title": "Development",
+        "shuffled": false,
+        "contributors": [
+            {
+                "usernames": ["M0d-4"],
+                "displayName": "Mod4",
+                "roles": ["Maintainer", "Developer"]
+            },
+            {
+                "usernames": ["faroukbmiled"],
+                "displayName": "Ryuk",
+                "roles": ["Maintainer", "Developer"]
+            },
+            {
+                "usernames": ["jaydenjcpy"],
+                "displayName": "Jayden",
+                "roles": ["Maintainer", "Developer"]
+            }
+        ]
+    },
+    {
+        "title": "Localization",
+        "shuffled": true,
+        "contributors": []
+    }
+]

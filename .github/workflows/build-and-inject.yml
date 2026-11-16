@@ -1,0 +1,423 @@
+name: Build and Inject Infinitok
+
+on:
+  workflow_dispatch:
+    inputs:
+      ipa_url:
+        description: "Direct download link to a decrypted TikTok ipa (leave empty to only build the .deb)"
+        required: false
+        default: ""
+      ipa_upload_host:
+        description: "Where to upload the ipa"
+        type: choice
+        options:
+          - filebin
+          - pixeldrain
+          - artifacts
+          - all
+          - none
+        required: false
+        default: filebin
+      deb_upload_host:
+        description: "Where to upload the deb packages"
+        type: choice
+        options:
+          - filebin
+          - pixeldrain
+          - artifacts
+          - all
+          - none
+        required: false
+        default: filebin
+      deb_scheme:
+        description: "Which .deb to build (the rootful one is the one injected into the ipa)"
+        type: choice
+        options:
+          - "rootful (used in ipa)"
+          - rootless
+          - roothide
+          - all
+        required: false
+        default: "rootful (used in ipa)"
+      create_release:
+        description: "Publish a GitHub Release containing the download links in a text file"
+        type: boolean
+        required: false
+        default: true
+      patch_sideload:
+        description: "Patch the IPA with ipapatch (zxPluginsInject) — sideload patch"
+        type: boolean
+        required: false
+        default: true
+      build_both:
+        description: "Build BOTH the patched and unpatched IPA (overrides the sideload patch option above)"
+        type: boolean
+        required: false
+        default: false
+      add_safari_extension:
+        description: "Embed BillyCurtis/OpenTikTokSafariExtension"
+        type: boolean
+        required: false
+        default: true
+      sdk_version:
+        description: "iOS SDK version to build against"
+        required: false
+        default: "16.5"
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Purge old artifacts to free storage quota
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api "repos/${{ github.repository }}/actions/artifacts" --paginate \
+            --jq '.artifacts[].id' | while read -r id; do
+            echo "Deleting old artifact id $id"
+            gh api -X DELETE "repos/${{ github.repository }}/actions/artifacts/$id" || true
+          done
+
+      - name: Install Theos
+        run: |
+          export THEOS="$HOME/theos"
+          echo "THEOS=$HOME/theos" >> "$GITHUB_ENV"
+          bash -c "$(curl -fsSL https://raw.githubusercontent.com/theos/theos/master/bin/install-theos)"
+      - name: Install roothide Theos
+        run: |
+          git clone --recursive https://github.com/roothide/theos.git "$HOME/theos-roothide"
+          rm -rf "$HOME/theos-roothide/toolchain"
+          cp -R "$HOME/theos/toolchain" "$HOME/theos-roothide/toolchain"
+      - name: Fetch iOS SDK
+        env:
+          SDK_VERSION: ${{ inputs.sdk_version }}
+        run: |
+          git clone -n --depth=1 --filter=tree:0 https://github.com/theos/sdks/
+          cd sdks
+          git sparse-checkout set --no-cone "iPhoneOS${SDK_VERSION}.sdk"
+          git checkout
+          rm -rf "$THEOS/sdks/iPhoneOS${SDK_VERSION}.sdk"
+          cp -R "iPhoneOS${SDK_VERSION}.sdk" "$THEOS/sdks/"
+          rm -rf "$HOME/theos-roothide/sdks/iPhoneOS${SDK_VERSION}.sdk"
+          mv "iPhoneOS${SDK_VERSION}.sdk" "$HOME/theos-roothide/sdks/"
+          cd ..
+          rm -rf sdks
+      - name: Plan which debs to build
+        id: plan
+        run: |
+          SEL="${{ inputs.deb_scheme }}"
+          R=false; L=false; H=false
+          case "$SEL" in
+            all) R=true; L=true; H=true ;;
+            rootless) L=true ;;
+            roothide) H=true ;;
+            *) R=true ;;
+          esac
+          # the ipa always embeds the rootful build
+          if [ -n "${{ inputs.ipa_url }}" ]; then R=true; fi
+          echo "rootful=$R" >> "$GITHUB_OUTPUT"
+          echo "rootless=$L" >> "$GITHUB_OUTPUT"
+          echo "roothide=$H" >> "$GITHUB_OUTPUT"
+          echo "Selected: $SEL -> rootful=$R rootless=$L roothide=$H"
+      - name: Build tweak + resource bundle (rootful)
+        if: ${{ steps.plan.outputs.rootful == 'true' }}
+        run: |
+          make clean
+          make package FINALPACKAGE=1
+          mkdir -p artifacts/rootful
+          cp packages/*.deb artifacts/rootful/ 2>/dev/null || cp Packages/*.deb artifacts/rootful/ 2>/dev/null || true
+      - name: Build tweak + resource bundle (rootless)
+        if: ${{ steps.plan.outputs.rootless == 'true' }}
+        run: |
+          make clean
+          make package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
+          mkdir -p artifacts/rootless
+          cp packages/*.deb artifacts/rootless/ 2>/dev/null || cp Packages/*.deb artifacts/rootless/ 2>/dev/null || true
+      - name: Build tweak + resource bundle (roothide)
+        if: ${{ steps.plan.outputs.roothide == 'true' }}
+        run: |
+          export THEOS="$HOME/theos-roothide"
+          make clean
+          make package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=roothide
+          mkdir -p artifacts/roothide
+          cp packages/*.deb artifacts/roothide/ 2>/dev/null || cp Packages/*.deb artifacts/roothide/ 2>/dev/null || true
+      - name: Rename and collect .deb packages
+        run: |
+          mkdir -p artifacts/final
+          SEL="${{ inputs.deb_scheme }}"
+          case "$SEL" in
+            all) SCHEMES="rootful rootless roothide" ;;
+            rootless) SCHEMES="rootless" ;;
+            roothide) SCHEMES="roothide" ;;
+            *) SCHEMES="rootful" ;;
+          esac
+          for scheme in $SCHEMES; do
+            for f in artifacts/$scheme/*.deb; do
+              [ -e "$f" ] || continue
+              base="$(basename "$f" .deb)"
+              cp "$f" "artifacts/final/${base}-${scheme}.deb"
+            done
+          done
+          ls -la artifacts/final
+      - name: Upload .deb artifacts (GitHub Actions storage)
+        if: ${{ inputs.deb_upload_host == 'artifacts' || inputs.deb_upload_host == 'all' }}
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: infinitok-deb
+          path: artifacts/final/*.deb
+          if-no-files-found: error
+          retention-days: 3
+
+      - name: Package .deb builds for external upload
+        if: ${{ inputs.deb_upload_host == 'filebin' || inputs.deb_upload_host == 'pixeldrain' || inputs.deb_upload_host == 'all' }}
+        run: |
+          cd artifacts/final
+          zip -qr ../../infinitok-debs.zip .
+          cd ../..
+          ls -la infinitok-debs.zip
+      - name: Upload debs to filebin.net
+        if: ${{ inputs.deb_upload_host == 'filebin' || inputs.deb_upload_host == 'all' }}
+        run: |
+          BIN_ID="infinitok-debs-$(date -u +%Y%m%d%H%M%S)-${GITHUB_RUN_ID}"
+          curl -sS -X POST \
+            -H "Content-Type: application/octet-stream" \
+            --data-binary @infinitok-debs.zip \
+            "https://filebin.net/${BIN_ID}/infinitok-debs.zip" > filebin_debs_response.json
+          echo "FILEBIN_DEBS_LINK=https://filebin.net/${BIN_ID}/infinitok-debs.zip" >> "$GITHUB_ENV"
+          echo "FILEBIN_DEBS_BIN_LINK=https://filebin.net/${BIN_ID}" >> "$GITHUB_ENV"
+      - name: Upload debs to pixeldrain
+        if: ${{ inputs.deb_upload_host == 'pixeldrain' || inputs.deb_upload_host == 'all' }}
+        env:
+          PIXELDRAIN_API_KEY: ${{ secrets.PIXELDRAIN_API_KEY }}
+        run: |
+          if [ -z "${PIXELDRAIN_API_KEY:-}" ]; then
+            echo "::warning::PIXELDRAIN_API_KEY secret is not set — skipping deb upload to pixeldrain."
+            exit 0
+          fi
+          HTTP_STATUS="$(curl -sS -o pixeldrain_debs_response.json -w '%{http_code}' -X POST \
+            -u ":${PIXELDRAIN_API_KEY}" \
+            -F "file=@infinitok-debs.zip;filename=infinitok-debs.zip" \
+            "https://pixeldrain.com/api/file")"
+          cat pixeldrain_debs_response.json
+          if [ "$HTTP_STATUS" -ge 400 ]; then
+            echo "::warning::pixeldrain deb upload failed with HTTP ${HTTP_STATUS}"
+            exit 0
+          fi
+          PIXELDRAIN_DEBS_ID="$(python3 -c "import json,sys; d=json.load(open('pixeldrain_debs_response.json')); sys.exit(1) if not d.get('success') or 'id' not in d else print(d['id'])")" || {
+            echo "::warning::pixeldrain deb response did not contain a file id"
+            exit 0
+          }
+          echo "PIXELDRAIN_DEBS_LINK=https://pixeldrain.com/api/file/${PIXELDRAIN_DEBS_ID}?download" >> "$GITHUB_ENV"
+          echo "PIXELDRAIN_DEBS_PAGE_LINK=https://pixeldrain.com/u/${PIXELDRAIN_DEBS_ID}" >> "$GITHUB_ENV"
+
+      - name: Inject into IPA
+        if: ${{ inputs.ipa_url != '' }}
+        run: |
+          python3 -m venv .pyzule-venv
+          source .pyzule-venv/bin/activate
+          pip install --upgrade pip
+          pip install "https://github.com/asdfzxcvbn/pyzule-rw/archive/main.zip"
+          curl -fL "${{ inputs.ipa_url }}" -o input.ipa
+          cyan -i input.ipa -o Infinitok.ipa -f artifacts/rootful/*.deb -c 9 -m 14.0 -u
+          echo "IPA built: Infinitok.ipa"
+      - name: Embed Safari extension and alternate app icons
+        if: ${{ inputs.ipa_url != '' }}
+        run: |
+          mkdir -p ipa-extract
+          cd ipa-extract
+          unzip -q ../Infinitok.ipa
+          APP_DIR="$(find Payload -maxdepth 1 -iname '*.app' | head -n1)"
+          if [ -z "$APP_DIR" ]; then
+            echo "::error::Could not find a .app directory inside Payload/ — Infinitok.ipa may be malformed."
+            exit 1
+          fi
+          if [ "${{ inputs.add_safari_extension }}" = "true" ]; then
+            git clone --depth 1 https://github.com/BillyCurtis/OpenTikTokSafariExtension.git ../ext-src
+            if [ ! -d "../ext-src/OpenTikTokSafariExtension.appex" ]; then
+              echo "::error::OpenTikTokSafariExtension.appex not found in the cloned repo — its layout may have changed."
+              exit 1
+            fi
+            mkdir -p "$APP_DIR/PlugIns"
+            rm -rf "$APP_DIR/PlugIns/OpenTikTokSafariExtension.appex"
+            cp -R ../ext-src/OpenTikTokSafariExtension.appex "$APP_DIR/PlugIns/"
+            echo "Embedded extension at $APP_DIR/PlugIns/OpenTikTokSafariExtension.appex"
+          fi
+          pip install --break-system-packages -q pillow
+          python3 ../Tools/apply_alternate_icons.py "$APP_DIR" ../icons
+          python3 ../Tools/verify_alternate_icons.py "$APP_DIR"
+          rm -f ../Infinitok.ipa
+          zip -qr ../Infinitok.ipa Payload
+          cd ..
+          rm -rf ipa-extract ext-src
+      - name: Keep an unpatched copy of the IPA
+        if: ${{ inputs.ipa_url != '' && inputs.build_both }}
+        run: cp Infinitok.ipa Infinitok-unpatched.ipa
+      - name: Patch IPA for sideloading (ipapatch / zxPluginsInject)
+        if: ${{ inputs.ipa_url != '' && (inputs.patch_sideload || inputs.build_both) }}
+        env:
+          IPAPATCH_VERSION: v2.1.3
+        run: |
+          curl -fL -o ipapatch \
+            "https://github.com/asdfzxcvbn/ipapatch/releases/download/${IPAPATCH_VERSION}/ipapatch.linux-amd64"
+          chmod +x ipapatch
+          ./ipapatch --version
+          ./ipapatch --input Infinitok.ipa --inplace --noconfirm
+      - name: Verify icon files survived sideload patching
+        if: ${{ inputs.ipa_url != '' && (inputs.patch_sideload || inputs.build_both) }}
+        run: |
+          mkdir -p ipa-verify
+          cd ipa-verify
+          unzip -q ../Infinitok.ipa
+          APP_DIR="$(find Payload -maxdepth 1 -iname '*.app' | head -n1)"
+          python3 ../Tools/verify_alternate_icons.py "$APP_DIR"
+          cd ..
+          rm -rf ipa-verify
+      - name: Name the IPA (-patched / -unpatched)
+        if: ${{ inputs.ipa_url != '' }}
+        run: |
+          if [ "${{ inputs.build_both }}" = "true" ]; then
+            mv Infinitok.ipa Infinitok-patched.ipa
+            IPA_FILES="Infinitok-patched.ipa Infinitok-unpatched.ipa"
+          else
+            if [ "${{ inputs.patch_sideload }}" = "true" ]; then SUFFIX=patched; else SUFFIX=unpatched; fi
+            mv Infinitok.ipa "Infinitok-${SUFFIX}.ipa"
+            IPA_FILES="Infinitok-${SUFFIX}.ipa"
+          fi
+          echo "IPA_FILES=${IPA_FILES}" >> "$GITHUB_ENV"
+          echo "Final IPA(s): ${IPA_FILES}"
+      - name: Upload IPA artifact (GitHub Actions storage)
+        if: ${{ inputs.ipa_url != '' && (inputs.ipa_upload_host == 'artifacts' || inputs.ipa_upload_host == 'all') }}
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: infinitok-ipa
+          path: Infinitok-*.ipa
+          if-no-files-found: error
+          retention-days: 3
+
+      - name: Upload IPA to filebin.net
+        if: ${{ inputs.ipa_url != '' && (inputs.ipa_upload_host == 'filebin' || inputs.ipa_upload_host == 'all') }}
+        run: |
+          BIN_ID="infinitok-$(date -u +%Y%m%d%H%M%S)-${GITHUB_RUN_ID}"
+          for f in ${IPA_FILES}; do
+            curl -sS -X POST \
+              -H "Content-Type: application/octet-stream" \
+              --data-binary @"${f}" \
+              "https://filebin.net/${BIN_ID}/${f}" > "filebin_response_${f}.json"
+            echo "  ${f}: https://filebin.net/${BIN_ID}/${f}" >> ipa_links_filebin.txt
+          done
+          echo "FILEBIN_BIN_LINK=https://filebin.net/${BIN_ID}" >> "$GITHUB_ENV"
+      - name: Upload IPA to pixeldrain
+        if: ${{ inputs.ipa_url != '' && (inputs.ipa_upload_host == 'pixeldrain' || inputs.ipa_upload_host == 'all') }}
+        env:
+          PIXELDRAIN_API_KEY: ${{ secrets.PIXELDRAIN_API_KEY }}
+        run: |
+          if [ -z "${PIXELDRAIN_API_KEY:-}" ]; then
+            echo "::warning::PIXELDRAIN_API_KEY secret is not set — pixeldrain requires an API key for uploads now. Add a repo secret named PIXELDRAIN_API_KEY to enable this."
+            if [ "${{ inputs.ipa_upload_host }}" = "pixeldrain" ]; then
+              exit 1
+            fi
+            exit 0
+          fi
+          for f in ${IPA_FILES}; do
+            HTTP_STATUS="$(curl -sS -o "pixeldrain_response_${f}.json" -w '%{http_code}' -X POST \
+              -u ":${PIXELDRAIN_API_KEY}" \
+              -F "file=@${f};filename=${f}" \
+              "https://pixeldrain.com/api/file")"
+            cat "pixeldrain_response_${f}.json"
+            if [ "$HTTP_STATUS" -ge 400 ]; then
+              echo "::warning::pixeldrain upload of ${f} failed with HTTP ${HTTP_STATUS}"
+              if [ "${{ inputs.ipa_upload_host }}" = "pixeldrain" ]; then
+                exit 1
+              fi
+              continue
+            fi
+            PIXELDRAIN_ID="$(python3 -c "import json,sys; d=json.load(open(sys.argv[1])); sys.exit(1) if not d.get('success') or 'id' not in d else print(d['id'])" "pixeldrain_response_${f}.json")" || {
+              echo "::warning::pixeldrain response for ${f} did not contain a file id"
+              if [ "${{ inputs.ipa_upload_host }}" = "pixeldrain" ]; then
+                exit 1
+              fi
+              continue
+            }
+            echo "  ${f} direct: https://pixeldrain.com/api/file/${PIXELDRAIN_ID}?download" >> ipa_links_pixeldrain.txt
+            echo "  ${f} page:   https://pixeldrain.com/u/${PIXELDRAIN_ID}" >> ipa_links_pixeldrain.txt
+          done
+      - name: Write download_links.txt
+        if: ${{ inputs.ipa_upload_host != 'none' || inputs.deb_upload_host != 'none' }}
+        run: |
+          {
+            echo "Infinitok build — run #${GITHUB_RUN_NUMBER} (${GITHUB_SHA})"
+            echo "Built: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            echo ""
+            if [ -s ipa_links_filebin.txt ]; then
+              echo "filebin.net (IPA) —"
+              cat ipa_links_filebin.txt
+              echo "  Bin page (all files): ${FILEBIN_BIN_LINK}"
+              echo ""
+            fi
+            if [ -s ipa_links_pixeldrain.txt ]; then
+              echo "pixeldrain.com (IPA) —"
+              cat ipa_links_pixeldrain.txt
+              echo ""
+            fi
+            if [ -n "${FILEBIN_DEBS_LINK:-}" ]; then
+              echo "filebin.net (.deb packages, zipped) —"
+              echo "  Direct download: ${FILEBIN_DEBS_LINK}"
+              echo "  Bin page (all files): ${FILEBIN_DEBS_BIN_LINK}"
+              echo ""
+            fi
+            if [ -n "${PIXELDRAIN_DEBS_LINK:-}" ]; then
+              echo "pixeldrain.com (.deb packages, zipped) —"
+              echo "  Direct download: ${PIXELDRAIN_DEBS_LINK}"
+              echo "  File page:         ${PIXELDRAIN_DEBS_PAGE_LINK}"
+              echo ""
+            fi
+          } > download_links.txt
+          cat download_links.txt
+      - name: Upload links artifact
+        if: ${{ inputs.ipa_upload_host != 'none' || inputs.deb_upload_host != 'none' }}
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: download-links
+          path: download_links.txt
+          if-no-files-found: error
+          retention-days: 3
+
+      - name: Determine release version and tag
+        if: ${{ (inputs.ipa_upload_host != 'none' || inputs.deb_upload_host != 'none') && inputs.create_release }}
+        run: |
+          VERSION="$(awk -F': ' '/^Version:/{print $2}' control | tr -d '[:space:]')"
+          if [ -z "$VERSION" ]; then
+            echo "::error::Could not read Version from control"
+            exit 1
+          fi
+          EXISTING_TAGS="$(git ls-remote --tags origin | awk '{print $2}' | sed 's#refs/tags/##; s#\^{}$##')"
+          TAG="v${VERSION}"
+          NAME="Infinitok ${VERSION}"
+          N=1
+          while echo "$EXISTING_TAGS" | grep -qx "$TAG"; do
+            N=$((N + 1))
+            TAG="v${VERSION}-build${N}"
+            NAME="Infinitok ${VERSION} build ${N}"
+          done
+          echo "Version: $VERSION -> tag $TAG, release '$NAME'"
+          echo "RELEASE_TAG=$TAG" >> "$GITHUB_ENV"
+          echo "RELEASE_NAME=$NAME" >> "$GITHUB_ENV"
+
+      - name: Publish release with links
+        if: ${{ (inputs.ipa_upload_host != 'none' || inputs.deb_upload_host != 'none') && inputs.create_release }}
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.RELEASE_TAG }}
+          name: ${{ env.RELEASE_NAME }}
+          files: download_links.txt
+          draft: false
+          prerelease: false
