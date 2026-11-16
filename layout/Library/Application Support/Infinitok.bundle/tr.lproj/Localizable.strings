@@ -1,0 +1,287 @@
+/* Infinitok Settings — Türkçe */
+
+"settings.title" = "Infinitok Ayarları";
+
+"section.feed" = "Akış";
+"section.profile" = "Profil";
+"section.confirm" = "Onay";
+"section.other" = "Diğer";
+"section.region" = "Bölge";
+"section.live_button" = "Yayın Butonu İşlevi";
+"section.playback_speed" = "Oynatma Hızı";
+"section.developer" = "Geliştirici";
+"section.extra" = "Ekstra Özellikler";
+
+"extra.save_comment_media.title" = "Yorumlardaki Görselleri Kaydet";
+"extra.save_comment_media.detail" = "Yorumlardaki görselleri ve çıkartmaları kaydetmek için üzerine basılı tutun";
+
+"extra.exact_follower_count.title" = "Tam Takipçi Sayısı";
+"extra.exact_follower_count.detail" = "Kısaltılmış sayı yerine tam takipçi sayısını göster";
+
+"extra.copy_comment_no_username.title" = "Kullanıcı Adı Olmadan Yorumu Kopyala";
+"extra.copy_comment_no_username.detail" = "Bir yorumu kopyalamak için üzerine basılı tutun, varsa başındaki @etiketini kaldırarak metni kopyalar";
+
+"extra.post_stats.title" = "Gönderi İstatistikleri";
+"extra.post_stats.detail" = "Video indirme menüsüne beğenileri, yorumları, paylaşımları, oynatma ve kaydetme sayılarını gösteren bir Gönderi İstatistikleri seçeneği ekler";
+
+"extra.hide_tako_button.title" = "Tako Butonunu Gizle";
+"extra.hide_tako_button.detail" = "Akıştaki TikTok yapay zeka asistanı giriş noktasını gizler";
+
+"extra.translate_comments.title" = "Yorumları Çevir";
+"extra.translate_comments.detail" = "TikTok'un kendi çeviri butonunun her yorumda görünmesini zorlar";
+
+
+"extra.hide_ai_videos.title" = "Yapay Zeka Videolarını Gizle";
+"extra.hide_ai_videos.detail" = "TikTok'un yapay zeka üretimi içerik olarak etiketlediği akış videolarını atlar";
+
+"extra.watch_stories_anonymously.title" = "Hikayeleri Anonim Olarak İzle";
+"extra.watch_stories_anonymously.detail" = "Birinin hikayesini görüntülediğinizde TikTok'un gönderdiği ağ raporunu atlar";
+
+"extra.visit_profiles_privately.title" = "Profilleri Gizli Ziyaret Et";
+"extra.visit_profiles_privately.detail" = "Birinin profilini ziyaret ettiğinizde TikTok'un gönderdiği ağ raporunu atlar";
+
+"extra.read_chats_anonymously.title" = "Sohbetleri Gizli Oku";
+"extra.read_chats_anonymously.detail" = "Bir sohbeti açtığınızda okundu bilgisinin gönderilmesini atlar";
+
+"extra.story_download.title" = "Hikaye İndirme";
+"extra.story_download.detail" = "TikTok Hikayelerine bir indirme butonu ekler";
+
+"extra.story_view_count.title" = "Hikaye Görüntülenme Sayısı";
+"extra.story_view_count.detail" = "Hikayeyi kaç kişinin görüntülediğini göster";
+
+"extra.hide_typing_indicator.title" = "Yazıyor Göstergesini Gizle";
+"extra.hide_typing_indicator.detail" = "Karşı taraf yazdığınızı göremez";
+
+"extra.anti_delete_messages.title" = "Silinen Mesajları Göster";
+"extra.anti_delete_messages.detail" = "Gönderen kişi DM'yi sildikten veya geri aldıktan sonra bile içeriğini görmeye devam edin";
+
+"extra.dm_delete_confirmation.title" = "DM Silme Onayı";
+"extra.dm_delete_confirmation.detail" = "Bir mesajı silmeden önce sor";
+
+"extra.disable_phone_binding_popup.title" = "Telefon Numarası Bağlama Bildirimini Kapat";
+"extra.disable_phone_binding_popup.detail" = "TikTok'un telefon numarası bağlamanız için sürekli hatırlatma yapmasını engelle";
+
+"extra.save_to_vault.title" = "İndirilenleri Kasaya Kaydet";
+"extra.save_to_vault.detail" = "İndirdiğiniz her şeyi uygulama içi Medya Kasası'na da kopyala";
+
+"extra.media_vault.title" = "Medya Kasası";
+"extra.media_vault.detail" = "Kasaya kaydedilen her şeyi inceleyin, paylaşın veya silin";
+"extra.save_dm_media.title" = "DM'lerdeki Medyayı Kaydet";
+"extra.save_dm_media.detail" = "Sohbette gönderilen bir görseli kaydetmek için üzerine basılı tutun";
+"extra.lock_chats.title" = "Sohbetleri Kilitle";
+"extra.lock_chats.detail" = "DM gelen kutunuzu açmak için Face ID/parola isteyin";
+
+"extra.lock_favorites.title" = "Favorileri Kilitle";
+"extra.lock_favorites.detail" = "Favorilerinizi açmak için Face ID/parola isteyin";
+
+"extra.disable_feed_refresh.title" = "Akış Yenilemeyi Devre Dışı Bırak";
+"extra.disable_feed_refresh.detail" = "Ana Sayfa sekmesine tekrar dokunulduğunda akışın yenilenmesini durdur";
+
+"extra.exact_view_count.title" = "Tam Görüntülenme Sayısı";
+"extra.exact_view_count.detail" = "Profil ızgaranızda kısaltma yerine tam görüntülenme/beğeni sayısını göster";
+"extra.confirm_repost.title" = "Yeniden Paylaşma Onayı";
+"extra.confirm_repost.detail" = "Bir videoyu yeniden paylaşmadan önce sor";
+
+"extra.confirm_favorite.title" = "Favorilere Ekleme Onayı";
+"extra.confirm_favorite.detail" = "Bir videoyu favorilere kaydetmeden önce sor";
+
+"extra.confirm_send_comment.title" = "Yorum Gönderme Onayı";
+"extra.confirm_send_comment.detail" = "Bir yorum göndermeden önce sor";
+"extra.hide_caption.title" = "Açıklamaları/Hashtag'leri Gizle";
+"extra.hide_caption.detail" = "Akıştaki video açıklama metnini gizle";
+
+"extra.hide_comments_button.title" = "Yorumlar Butonunu Gizle";
+"extra.hide_comments_button.detail" = "Akıştaki yorum butonunu/sayısını gizle";
+
+"extra.hide_likes_button.title" = "Beğeni Butonunu Gizle";
+"extra.hide_likes_button.detail" = "Akıştaki beğeni butonunu/sayısını gizle";
+
+"extra.hide_music.title" = "Ses Başlığını Gizle";
+"extra.hide_music.detail" = "Akıştaki ses/müzik başlığını gizle";
+
+"extra.hide_share_button.title" = "Paylaş Butonunu Gizle";
+"extra.hide_share_button.detail" = "Akıştaki paylaş butonunu gizle";
+
+"extra.hide_search_button.title" = "Arama Butonunu Gizle";
+"extra.hide_search_button.detail" = "Arama simgesini gizle";
+
+"extra.hide_account_suggestions.title" = "Hesap Önerilerini Gizle";
+"extra.hide_account_suggestions.detail" = "Önerilen hesap kartı olabilecek hücreleri gizler (kesin bir sınıf değil, sezgiseldir)";
+"extra.hide_live_button.title" = "Canlı Yayın Butonunu Gizle";
+"extra.hide_live_button.detail" = "Video akışı yerine canlı yayına geçen akış içi CANLI (LIVE) giriş butonunu gizler";
+"extra.hide_download_button_native.title" = "Yerel İndirme Butonunu Gizle";
+"extra.hide_download_button_native.detail" = "Videolardaki TikTok'un kendi yerel indirme çubuğunu/butonunu gizler";
+"extra.hide_video_button.title" = "Video Yükleme Butonunu Gizle";
+"extra.hide_video_button.detail" = "Sekme çubuğunda yeni bir video kaydetmek/göndermek için kullanılan \"+\" butonunu gizler";
+
+
+"extra.fast_logout.title" = "Hızlı Çıkış Yap";
+"extra.fast_logout.detail" = "Çıkış yaparken onay isteme";
+
+"extra.auto_clear_history.title" = "Geçmişi Otomatik Temizle";
+"extra.auto_clear_history.detail" = "Uygulama açıldıktan kısa süre sonra arama geçmişini temizler — tahmini bir temizleme yöntemi arar ve çalıştırır, bulunamazsa hiçbir şey yapmaz";
+"extra.persistent_progress_slider.title" = "Kalıcı İlerleme Çubuğu";
+"extra.persistent_progress_slider.detail" = "Videolarda sürüklenebilir bir ilerleme çubuğunu her zaman görünür tut";
+
+"extra.exact_timestamp.title" = "Tam Gönderi Zamanını Göster";
+"extra.exact_timestamp.detail" = "Yalnızca göreceli bir tarih yerine videonun gönderildiği tam saati göster";
+
+"extra.oled_mode.title" = "OLED Modu";
+"extra.oled_mode.detail" = "Uygulama genelinde gerçek siyah arka planlar ve koyu renkli klavye";
+
+"extra.faster_feed_scrolling.title" = "Daha Hızlı Akış Kaydırma";
+"extra.faster_feed_scrolling.detail" = "Akışta gezinmeyi daha hızlı ve akıcı hissettirmek için kaydırma yavaşlamasını azaltın";
+
+"extra.show_only_favorites.title" = "Yalnızca Favorileri Göster";
+"extra.show_only_favorites.detail" = "Favoriler ekranındaki sesler/hashtag'ler/kullanıcılar sekmelerini gizleyerek yalnızca videoları bırakır (kesin bir API değil, hücre sınıfı adına göre sezgiseldir)";
+
+
+
+"extra.force_new_profile_ui.title" = "Yeni Profil Arayüzünü Zorla";
+"extra.force_new_profile_ui.detail" = "TikTok'un test aşamasındaki profil tasarımını zorla etkinleştirir";
+"extra.profile_background_enabled.title" = "Profil Arka Planı (Arka Planı Değiştir)";
+"extra.profile_background_enabled.detail" = "Yeni profil arayüzü için Profili Düzenle kısmında TikTok'un profil arka planı/afiş düzenleyicisini, henüz kullanıma sunulmamış hesaplarda bile açar. Profili Düzenle tekrar açıldıktan sonra geçerli olur; yüklemeler yine TikTok sunucuları tarafından doğrulanır.";
+"extra.enable_voice_messages.title" = "Sesli Mesajları Etkinleştir";
+"extra.enable_voice_messages.detail" = "TikTok'un bölge kısıtlaması koyduğu sohbet sesli mesaj girişini zorla açar";
+"extra.remove_account_limit.title" = "Oturum Açık Hesap Sınırını Kaldır";
+"extra.remove_account_limit.detail" = "Aynı anda kaç hesapta oturum açılabileceğine dair TikTok sınırını atlar";
+
+"extra.show_region_badge.title" = "İçerik Bölgesi Rozetini Göster";
+"extra.show_region_badge.detail" = "Akış videolarında yükleyicinin bölgesini belirten küçük bir bayrak göster";
+
+"extra.custom_accent_color.title" = "Özel Vurgu Rengi";
+"extra.custom_accent_color.detail" = "TikTok'un varsayılan rengi yerine aşağıda seçilen rengi uygulamanın tema rengi olarak kullan";
+
+"extra.pick_accent_color.title" = "Vurgu Rengi Seç";
+"extra.pick_accent_color.detail" = "Sistem renk seçicisini açar";
+
+/* Veri tabanlı ayarlar yenilemesi için eklendi — yeni bölümler + önceden yerelleştirilmemiş satırlar */
+
+"settings.hide_ads.title" = "Reklamları Gizle";
+"settings.hide_ads.detail" = "Uygulamadaki tüm reklamları gizle";
+"settings.download_button.title" = "İndirme Butonu";
+"settings.download_button.detail" = "Videolar için indirme butonunu etkinleştir";
+"settings.share_sheet.title" = "Paylaşım Sayfası";
+"settings.share_sheet.detail" = "Paylaşım sayfasında paylaşım seçeneklerini etkinleştir";
+"settings.remove_watermark.title" = "Filigranı Kaldır";
+"settings.remove_watermark.detail" = "Videolardaki TikTok filigranını kaldır";
+"settings.remove_elements_button.title" = "Arayüzü Gizle/Göster Butonu";
+"settings.remove_elements_button.detail" = "Arayüz butonunu göster veya gizle";
+"settings.stop_play.title" = "Oynatmayı Durdur";
+"settings.stop_play.detail" = "Video oynatmayı otomatik olarak durdur";
+"settings.auto_play.title" = "Sonraki Videoyu Otomatik Oynat";
+"settings.auto_play.detail" = "Sonraki videoyu otomatik olarak oynat";
+"settings.show_porgress_bar.title" = "İlerleme Çubuğunu Göster";
+"settings.show_porgress_bar.detail" = "Video oynatımında ilerleme çubuğunu görüntüle";
+"settings.buttons_on_right.title" = "Butonlar Sağ Tarafta";
+"settings.buttons_on_right.detail" = "İndirme ve arayüzü gizleme butonlarını sağ tarafa taşı";
+"settings.show_username.title" = "Kullanıcı Adlarını Göster";
+"settings.show_username.detail" = "Videolarda kullanıcı adlarını görüntüle";
+"settings.disable_unsensitive.title" = "Hassas İçeriği Devre Dışı Bırak";
+"settings.disable_unsensitive.detail" = "Hassas içerik filtresini devre dışı bırak";
+"settings.disable_warnings.title" = "Uyarıları Devre Dışı Bırak";
+"settings.disable_warnings.detail" = "TikTok uyarılarını devre dışı bırak";
+"settings.disable_live.title" = "Canlı Yayınları Devre Dışı Bırak";
+"settings.disable_live.detail" = "Canlı video yayınlarını devre dışı bırak";
+"settings.skip_recommnedations.title" = "Önerileri Atla";
+"settings.skip_recommnedations.detail" = "Önerilen videoları atla";
+"settings.save_profile.title" = "Profili Kaydet";
+"settings.save_profile.detail" = "Profil detaylarını panoya kaydet";
+"settings.copy_profile_information.title" = "Profili Kopyala";
+"settings.copy_profile_information.detail" = "Profil bilgilerini kopyala";
+"settings.video_like_count.title" = "Video Beğeni Sayısı";
+"settings.video_like_count.detail" = "Videolardaki beğeni sayısını göster";
+"settings.video_upload_date.title" = "Video Yükleme Tarihi";
+"settings.video_upload_date.detail" = "Videoların yüklendiği tarihi göster";
+"settings.like_confirm.title" = "Beğenme Onayı";
+"settings.like_confirm.detail" = "Bir videoyu beğenmeden önce onayla";
+"settings.like_comment_confirm.title" = "Yorum Beğenme Onayı";
+"settings.like_comment_confirm.detail" = "Bir yorumu beğenmeden önce onayla";
+"settings.dislike_comment_confirm.title" = "Yorumu Beğenmeme Onayı";
+"settings.dislike_comment_confirm.detail" = "Bir yorumu beğenmemeden önce onayla";
+"settings.follow_confirm.title" = "Takip Etme Onayı";
+"settings.follow_confirm.detail" = "Bir kullanıcıyı takip etmeden önce onayla";
+"settings.en_region.title" = "Bölge Değiştirmeyi Etkinleştir";
+"settings.en_region.detail" = "Bölge değiştirme fonksiyonunu etkinleştir";
+"settings.en_livefunc.title" = "Canlı Yayın Butonu Eylemi";
+"settings.en_livefunc.detail" = "Varsayılan canlı yayın butonu eylemini değiştir";
+"settings.playback_en.title" = "Oynatma Hızı";
+"settings.playback_en.detail" = "Kalıcı Oynatma Hızını Etkinleştir.";
+"section.privacy" = "Gizlilik ve Anonimlik";
+"section.messages" = "Mesajlar";
+"section.media" = "Medya ve Kasa";
+"section.appearance" = "Görünüm";
+"section.feed_content" = "Akış İçeriği";
+"section.fake_profile" = "Sahte Profil";
+"settings.en_fake.title" = "Sahte Değişiklikleri Etkinleştir";
+"settings.en_fake.detail" = "Sahte profil değişikliklerini etkinleştir";
+"settings.fake_verify.title" = "Sahte Onaylı Hesap";
+"settings.fake_verify.detail" = "Hesabınızı doğrulanmış gibi gösterin";
+"settings.extended_bio.title" = "Genişletilmiş Biyografi";
+"settings.extended_bio.detail" = "Profilinizin biyografi bölümünü uzatın";
+"settings.extended_comment.title" = "Genişletilmiş Yorumlar";
+"settings.extended_comment.detail" = "Yorumlarınızın uzunluğunu artırın";
+"settings.upload_hd.title" = "HD Olarak Yükle";
+"settings.upload_hd.detail" = "Videoları HD kalitede yükle";
+"section.security" = "Güvenlik";
+"settings.padlock.title" = "Uygulama Kilidi";
+"settings.padlock.detail" = "Uygulamayı bir parola ile kilitle";
+"settings.open_in_browser.title" = "Her Zaman Safari'de Aç";
+"settings.open_in_browser.detail" = "Bağlantıları her zaman Safari'de aç";
+"settings.flex_enabled.title" = "Flex'i Etkinleştir";
+"settings.flex_enabled.detail" = "Yalnızca Geliştiriciler İçin, ne yaptığınızı bilmiyorsanız dokunmayın.";
+"settings.debug_logging.title" = "Hata Ayıklama Günlüğü";
+"settings.debug_logging.detail" = "Infinitok tanılama verilerini cihaz konsoluna yazar. Varsayılan olarak kapalıdır.";
+"settings.export_debug_log.title" = "Hata Ayıklama Günlüğünü Dışa Aktar";
+"settings.export_debug_log.detail" = "Hata ayıklama günlüğü dosyasını paylaş";
+"settings.export_debug_log.empty_title" = "Henüz Günlük Yok";
+"settings.export_debug_log.empty_message" = "Henüz hiçbir şey kaydedilmedi. Sorunu yeniden oluşturmayı deneyin, ardından tekrar dışa aktarın.";
+"settings.clear_debug_log.title" = "Hata Ayıklama Günlüğünü Temizle";
+"settings.clear_debug_log.confirm_title" = "Hata Ayıklama Günlüğü Temizlensin mi?";
+"settings.clear_debug_log.confirm_message" = "Bu işlem bu cihazdaki günlük dosyasını siler. Bu işlem geri alınamaz.";
+"common.cancel" = "İptal";
+"common.delete" = "Sil";
+"common.ok" = "Tamam";
+"common.retry" = "Tekrar Dene";
+"settings.contributors.title" = "Katkıda Bulunanlar";
+"settings.contributors.parse_error" = "Katkıda bulunanlar listesi okunamadı. Birazdan tekrar deneyin.";
+"settings.contributors.empty" = "Katkıda bulunan bulunamadı.";
+"settings.search.placeholder" = "Ayarlarda ara";
+"settings.version_footer" = "Infinitok v%@";
+"settings.app_icon.title" = "Uygulama Simgesi";
+"settings.app_icon.detail" = "Infinitok'un simgesini değiştir";
+"settings.app_icon.default_name" = "Varsayılan";
+"settings.app_icon.selected" = "Seçildi";
+"settings.app_icon.tap_to_apply" = "Uygulamak için dokun";
+"settings.app_icon.footer" = "Simgelerin Ana Ekran'da değişmesi biraz vakit alabilir.";
+"settings.app_icon.unsupported" = "Bu cihaz veya yükleme alternatif simgeleri desteklemiyor.";
+"settings.app_icon.signing_error" = "iOS simge değişikliğini reddetti. Bu genellikle SpringBoard'un bu uygulamanın simge bilgilerini alternatif simgeler var olmadan önce önbelleğe aldığı anlamına gelir; cihazınızı tamamen yeniden başlatıp tekrar deneyin. Ondan sonra hala başarısız olursa, bu muhtemelen tweak içinden atlanamayacak yükleme yöntemine ait katı bir kısıtlamadır.";
+"settings.hide_ui_button_mode.title" = "Arayüzü Gizle Butonu Davranışı";
+"settings.hide_ui_button_mode.menu" = "Her Seferinde Sor";
+"settings.hide_ui_button_mode.this_video" = "Yalnızca Bu Video";
+"settings.hide_ui_button_mode.all" = "Tüm Videolar";
+"extra.ghost_mode.title" = "Hayalet Modu";
+"extra.ghost_mode.detail" = "Anonim hikaye görüntülemeleri, gizli profil ziyaretleri, gizli sohbet okundu bilgileri ve gizli yazıyor göstergesi, hepsi bir arada.";
+"extra.hide_feed_tabs.title" = "Akış Sekmelerini Gizle";
+"extra.hide_feed_tabs.detail" = "Akışın üst kısmındaki Takip Edilenler / Arkadaşlar / Sizin İçin sekme çubuğunu gizle.";
+"extra.hide_tab_slot_second.title" = "Arkadaşlar Sekmesini Gizle";
+"extra.hide_tab_slot_second.detail" = "Alt çubuktaki Arkadaşlar sekmesini gizle ve kalanı yeniden konumlandır.";
+"extra.hide_tab_slot_last.title" = "Profil Sekmesini Gizle";
+"extra.hide_tab_slot_last.detail" = "Alt çubuktaki Profil sekmesini gizle ve kalanı yeniden konumlandır.";
+"extra.full_length_comments.title" = "Tam Boyutlu Yorumlar";
+"extra.full_length_comments.detail" = "Uzun yorumları kesmek yerine tamamen genişlet.";
+"extra.font_import.title" = "Özel Yazı Tipi İçe Aktar";
+"extra.font_import.detail" = "TikTok'un yazı tipi olarak kullanmak üzere .ttf, .otf veya .ttc dosyası seçin.";
+"extra.font_reset.title" = "Özel Yazı Tipini Sıfırla";
+"extra.font_reset.detail" = "TikTok'un varsayılan yazı tipine geri dön.";
+"extra.delete_all_reposts.title" = "Tüm Yeniden Paylaşımları Sil";
+"extra.delete_all_reposts.detail" = "Yeniden paylaştığınız her videoyu kaldırın.";
+
+"extra.hide_find_similar.title" = "Benzerini Bul'u Gizle";
+
+"extra.hide_tab_bar_text.title" = "Sekme Çubuğu Metnini Gizle";
+"extra.hide_tab_bar_text.detail" = "Sekme çubuğu simgelerinin altındaki etiketleri kaldırır.";
+
+"extra.enable_comment_repost.title" = "Yorum Yeniden Paylaşımlarını Etkinleştir";
+"extra.enable_comment_repost.detail" = "TikTok'un yorumu yeniden paylaşma özelliğini açar. Değiştirdikten sonra TikTok'u yeniden başlatın.";
+"extra.hide_find_similar.detail" = "Duraklatılmış videolardaki \"Benzerini bul\" / \"Bu görseli ara\" butonlarını ve fotoğrafların üzerine çizilen alışveriş/görsel arama etiketlerini (örn. \"Güneş Gözlüğü >\") kaldırır.";
