@@ -37,11 +37,11 @@ Like Confirmation, Follow Confirmation, Confirm Repost, Confirm Add To Favorites
 Full-screen with a back button and animated open/close. The "Infinitok settings" row inserted into TikTok's own Settings list uses a grey icon.
 
 ## Credits
-- [M0d-4](https://github.com/M0d-4) (Mod4) — Maintainer, Developer
-- [faroukbmiled](https://github.com/faroukbmiled) (Ryuk) — Maintainer, Developer
-- [jaydenjcpy](https://github.com/jaydenjcpy) (Jayden) — Maintainer, Developer
-- [raulsaeed](https://github.com/raulsaeed) (raulsaeed)
-- [BandarHL](https://github.com/BandarHL) (BandarHL)
+- [Mod4](https://github.com/M0d-4)
+- [faroukbmiled](https://github.com/faroukbmiled)
+- [jaydenjcpy](https://github.com/jaydenjcpy)
+- [raulsaeed](https://github.com/raulsaeed)
+- [BandarHL](https://github.com/BandarHL)
 
 ## Localization
 English and Arabic.
