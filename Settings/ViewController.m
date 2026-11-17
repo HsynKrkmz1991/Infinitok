@@ -935,14 +935,6 @@ static NSArray<InfinitokSettingsSection *> *InfinitokBuildSettingsSections(void)
         {
             InfinitokSettingsRow *row = [InfinitokSettingsRow new];
             row.type = InfinitokSettingsRowTypeSwitch;
-            row.defaultsKey = @"flex_enebaled";
-            row.titleKey = @"settings.flex_enabled.title";
-            row.detailKey = @"settings.flex_enabled.detail";
-            [rows addObject:row];
-        }
-        {
-            InfinitokSettingsRow *row = [InfinitokSettingsRow new];
-            row.type = InfinitokSettingsRowTypeSwitch;
             row.defaultsKey = @"debug_logging";
             row.titleKey = @"settings.debug_logging.title";
             row.detailKey = @"settings.debug_logging.detail";

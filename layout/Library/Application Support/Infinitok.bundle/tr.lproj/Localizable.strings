@@ -228,8 +228,6 @@
 "settings.padlock.detail" = "Uygulamayı bir parola ile kilitle";
 "settings.open_in_browser.title" = "Her Zaman Safari'de Aç";
 "settings.open_in_browser.detail" = "Bağlantıları her zaman Safari'de aç";
-"settings.flex_enabled.title" = "Flex'i Etkinleştir";
-"settings.flex_enabled.detail" = "Yalnızca Geliştiriciler İçin, ne yaptığınızı bilmiyorsanız dokunmayın.";
 "settings.debug_logging.title" = "Hata Ayıklama Günlüğü";
 "settings.debug_logging.detail" = "Infinitok tanılama verilerini cihaz konsoluna yazar. Varsayılan olarak kapalıdır.";
 "settings.export_debug_log.title" = "Hata Ayıklama Günlüğünü Dışa Aktar";

@@ -632,9 +632,6 @@ static void InfinitokAddStoryViewCountLabel(UIViewController *controller) {
 %hook AppDelegate
 - (_Bool)application:(UIApplication *)application didFinishLaunchingWithOptions:(id)arg2 {
     %orig;
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"flex_enebaled"]) {
-        [[%c(FLEXManager) performSelector:@selector(sharedManager)] performSelector:@selector(showExplorer)];
-    }
     if (![[NSUserDefaults standardUserDefaults] objectForKey:@"InfinitokFirstRun"]) {
         [[NSUserDefaults standardUserDefaults] setValue:@"InfinitokFirstRun" forKey:@"InfinitokFirstRun"];
         [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"hide_ads"];

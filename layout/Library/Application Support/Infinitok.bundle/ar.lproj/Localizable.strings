@@ -228,8 +228,6 @@
 "settings.padlock.detail" = "قفل التطبيق برمز مرور";
 "settings.open_in_browser.title" = "فتح الروابط في سفاري دائمًا";
 "settings.open_in_browser.detail" = "فتح الروابط دائمًا في متصفح سفاري";
-"settings.flex_enabled.title" = "تفعيل Flex";
-"settings.flex_enabled.detail" = "للمطورين فقط، لا تلمسه إذا كنت لا تعرف ما تفعله.";
 "settings.debug_logging.title" = "سجلات التصحيح";
 "settings.debug_logging.detail" = "يكتب تشخيصات Infinitok إلى سجل الجهاز. معطّل افتراضيًا.";
 "settings.export_debug_log.title" = "تصدير سجل التصحيح";
