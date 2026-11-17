@@ -22,7 +22,7 @@
 "extra.copy_comment_no_username.detail" = "اضغط مطولاً على تعليق لنسخ نصه مع حذف الإشارة @ في البداية إن وجدت";
 
 "extra.post_stats.title" = "إحصائيات المنشور";
-"extra.post_stats.detail" = "يضيف خيار إحصائيات إلى قائمة تنزيل الفيديو يعرض الإعجابات والتعليقات والمشاركات والمشاهدات والحفظ";
+"extra.post_stats.detail" = "يضيف خيار الإحصائيات إلى قائمة تنزيل الفيديو";
 
 "extra.hide_tako_button.title" = "إخفاء زر Tako";
 "extra.hide_tako_button.detail" = "يخفي مدخل مساعد الذكاء الاصطناعي Tako في الخلاصة";
@@ -32,7 +32,7 @@
 
 
 "extra.hide_ai_videos.title" = "إخفاء فيديوهات الذكاء الاصطناعي";
-"extra.hide_ai_videos.detail" = "يتخطى فيديوهات الخلاصة التي يضع عليها تيك توك علامة المحتوى المُنشأ بالذكاء الاصطناعي";
+"extra.hide_ai_videos.detail" = "يتخطى الفيديوهات المصنّفة كمحتوى بالذكاء الاصطناعي";
 
 "extra.watch_stories_anonymously.title" = "مشاهدة القصص بشكل مجهول";
 "extra.watch_stories_anonymously.detail" = "يتخطى التقرير الذي يرسله تيك توك عند مشاهدة قصة شخص ما";
@@ -106,9 +106,9 @@
 "extra.hide_search_button.detail" = "إخفاء أيقونة البحث";
 
 "extra.hide_account_suggestions.title" = "إخفاء الحسابات المقترحة";
-"extra.hide_account_suggestions.detail" = "يخفي الخلايا التي يشير اسم صنفها إلى بطاقة حساب موصى به — أسلوب تخميني وليس صنفًا مؤكدًا";
+"extra.hide_account_suggestions.detail" = "يخفي بطاقات الحسابات المقترحة (تخميني)";
 "extra.hide_live_button.title" = "إخفاء زر البث المباشر";
-"extra.hide_live_button.detail" = "إخفاء زر الدخول إلى البث المباشر الذي يأخذك إلى بث مباشر بدلاً من مقاطع الفيديو";
+"extra.hide_live_button.detail" = "إخفاء زر البث المباشر في الخلاصة";
 "extra.hide_download_button_native.title" = "إخفاء زر التنزيل";
 "extra.hide_download_button_native.detail" = "إخفاء زر/شريط التنزيل الأصلي من تيك توك";
 "extra.hide_video_button.title" = "إخفاء زر الفيديو";
@@ -119,7 +119,7 @@
 "extra.fast_logout.detail" = "تخطي التأكيد عند تسجيل الخروج";
 
 "extra.auto_clear_history.title" = "مسح السجل تلقائيًا";
-"extra.auto_clear_history.detail" = "يمسح سجل البحث بعد فترة قصيرة من فتح التطبيق — يبحث عن طريقة مخمّنة لمسح السجل ويستدعيها، ولا يفعل شيئًا إن لم يجدها";
+"extra.auto_clear_history.detail" = "يمسح سجل البحث بعد فتح التطبيق بقليل (تخميني)";
 "extra.persistent_progress_slider.title" = "شريط تقدم دائم";
 "extra.persistent_progress_slider.detail" = "إبقاء شريط تقدم قابل للسحب ظاهرًا دائمًا على الفيديوهات";
 
@@ -133,18 +133,18 @@
 "extra.faster_feed_scrolling.detail" = "تقليل تباطؤ التمرير ليصبح الانتقال في الخلاصة أكثر سلاسة";
 
 "extra.show_only_favorites.title" = "إظهار الفيديوهات فقط في المفضلة";
-"extra.show_only_favorites.detail" = "إخفاء تبويبات الأصوات/الهاشتاغ/المستخدمين في المفضلة، مع إبقاء الفيديوهات فقط — أسلوب تخميني بحسب اسم الصنف، وليس واجهة مؤكدة";
+"extra.show_only_favorites.detail" = "إخفاء تبويبات الأصوات/الهاشتاغ/المستخدمين في المفضلة (تخميني)";
 
 
 
 "extra.force_new_profile_ui.title" = "فرض واجهة الملف الشخصي الجديدة";
 "extra.force_new_profile_ui.detail" = "يفرض تفعيل تصميم الملف الشخصي الجديد قيد الاختبار في TikTok";
 "extra.profile_background_enabled.title" = "خلفية الملف الشخصي (تغيير الخلفية)";
-"extra.profile_background_enabled.detail" = "يفتح محرر خلفية/بانر الملف الشخصي في TikTok ضمن تعديل الملف الشخصي للواجهة الجديدة، حتى لو لم يُفعَّل لحسابك. يظهر بعد إعادة فتح تعديل الملف الشخصي؛ ويظل خادم TikTok يتحقق من الصور المرفوعة.";
+"extra.profile_background_enabled.detail" = "يفتح محرر خلفية الملف الشخصي في تعديل الملف. أعد فتح التعديل للتطبيق.";
 "extra.enable_voice_messages.title" = "تفعيل الرسائل الصوتية";
 "extra.enable_voice_messages.detail" = "يفرض تفعيل مدخل الرسائل الصوتية في المحادثات حيث يكون مقيّدًا بالمنطقة";
 "extra.remove_account_limit.title" = "إزالة حد الحسابات المسجّلة";
-"extra.remove_account_limit.detail" = "يتجاوز الحد الذي يفرضه TikTok على عدد الحسابات التي يمكن تسجيل الدخول بها في آنٍ واحد";
+"extra.remove_account_limit.detail" = "يتجاوز حد TikTok لعدد الحسابات المسجَّل بها";
 
 "extra.show_region_badge.title" = "إظهار شارة منطقة المحتوى";
 "extra.show_region_badge.detail" = "إظهار علم صغير على فيديوهات الخلاصة يشير إلى منطقة الناشر";
@@ -255,7 +255,7 @@
 "settings.app_icon.tap_to_apply" = "اضغط للتطبيق";
 "settings.app_icon.footer" = "قد يستغرق تغيير الأيقونة على الشاشة الرئيسية بعض الوقت.";
 "settings.app_icon.unsupported" = "هذا الجهاز أو التثبيت لا يدعم الأيقونات البديلة.";
-"settings.app_icon.signing_error" = "رفض iOS تغيير الأيقونة. عادةً ما يعني هذا أن SpringBoard خزّن معلومات أيقونة التطبيق مؤقتًا قبل وجود الأيقونات البديلة — جرّب إعادة تشغيل جهازك بالكامل ثم أعد المحاولة. إذا استمر الفشل بعد ذلك، فمن المحتمل أن يكون قيدًا صارمًا في طريقة التثبيت هذه لا يمكن التغلب عليه من داخل التعديل.";
+"settings.app_icon.signing_error" = "رفض iOS تغيير الأيقونة. أعد تشغيل جهازك بالكامل وحاول مجددًا. إذا استمر الفشل فقد لا تسمح طريقة التثبيت بذلك.";
 "settings.hide_ui_button_mode.title" = "سلوك زر إخفاء الواجهة";
 "settings.hide_ui_button_mode.menu" = "السؤال في كل مرة";
 "settings.hide_ui_button_mode.this_video" = "هذا الفيديو فقط";
@@ -284,4 +284,4 @@
 
 "extra.enable_comment_repost.title" = "تفعيل إعادة نشر التعليقات";
 "extra.enable_comment_repost.detail" = "يفعّل ميزة إعادة نشر التعليق في TikTok. أعد تشغيل TikTok بعد التغيير.";
-"extra.hide_find_similar.detail" = "يزيل أزرار \"البحث عن مشابه\" / \"البحث بهذه الصورة\" عند إيقاف الفيديو، وعلامات البحث المرئي/التسوق فوق الصور.";
+"extra.hide_find_similar.detail" = "يزيل أزرار \"البحث عن مشابه\" / \"البحث بهذه الصورة\" وعلامات التسوق.";

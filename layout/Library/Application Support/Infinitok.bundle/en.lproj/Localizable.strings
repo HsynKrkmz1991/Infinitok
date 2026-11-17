@@ -22,7 +22,7 @@
 "extra.copy_comment_no_username.detail" = "Long-press a comment to copy its text, stripping a leading @mention if present";
 
 "extra.post_stats.title" = "Post Stats";
-"extra.post_stats.detail" = "Adds a Post Stats option to the video download menu showing likes, comments, shares, plays and saves";
+"extra.post_stats.detail" = "Adds a Post Stats option to the download menu";
 
 "extra.hide_tako_button.title" = "Hide Tako Button";
 "extra.hide_tako_button.detail" = "Hides TikTok's AI assistant entry point on the feed";
@@ -78,7 +78,7 @@
 "extra.disable_feed_refresh.detail" = "Stop tapping the Home tab again from refreshing the feed";
 
 "extra.exact_view_count.title" = "Exact View Count";
-"extra.exact_view_count.detail" = "Show the exact number of views/likes on your profile grid instead of an abbreviation";
+"extra.exact_view_count.detail" = "Show exact view/like counts on your profile grid";
 "extra.confirm_repost.title" = "Confirm Repost";
 "extra.confirm_repost.detail" = "Ask before reposting a video";
 
@@ -106,9 +106,9 @@
 "extra.hide_search_button.detail" = "Hide the search icon";
 
 "extra.hide_account_suggestions.title" = "Hide Account Suggestions";
-"extra.hide_account_suggestions.detail" = "Hides cells whose class name suggests a recommended-account card — heuristic, not a confirmed class";
+"extra.hide_account_suggestions.detail" = "Hides recommended-account cards (heuristic)";
 "extra.hide_live_button.title" = "Hide Live Button";
-"extra.hide_live_button.detail" = "Hides the in-feed LIVE entrance button that jumps into a live stream instead of the video feed";
+"extra.hide_live_button.detail" = "Hides the in-feed LIVE entrance button";
 "extra.hide_download_button_native.title" = "Hide Download Button";
 "extra.hide_download_button_native.detail" = "Hides TikTok's own native download bar/button on videos";
 "extra.hide_video_button.title" = "Hide Video Button";
@@ -119,7 +119,7 @@
 "extra.fast_logout.detail" = "Skip the confirmation when logging out";
 
 "extra.auto_clear_history.title" = "Auto Clear History";
-"extra.auto_clear_history.detail" = "Clears search history shortly after launch — scans for and calls a guessed clear-history method, does nothing if none is found";
+"extra.auto_clear_history.detail" = "Clears search history shortly after launch (heuristic)";
 "extra.persistent_progress_slider.title" = "Persistent Progress Slider";
 "extra.persistent_progress_slider.detail" = "Keep a draggable progress bar always visible on videos";
 
@@ -133,14 +133,14 @@
 "extra.faster_feed_scrolling.detail" = "Reduce scroll deceleration so swiping through the feed feels snappier";
 
 "extra.show_only_favorites.title" = "Show Only Favorites";
-"extra.show_only_favorites.detail" = "Hide sounds/hashtags/users tabs on the Favorites screen, leaving just videos — heuristic by cell class name, not a confirmed API";
+"extra.show_only_favorites.detail" = "Hide sounds/hashtags/users tabs in Favorites (heuristic)";
 
 
 
 "extra.force_new_profile_ui.title" = "Force New Profile UI";
 "extra.force_new_profile_ui.detail" = "Forces TikTok's in-testing profile redesign on";
 "extra.profile_background_enabled.title" = "Profile Background (Change Background)";
-"extra.profile_background_enabled.detail" = "Unlocks TikTok's profile background / banner editor in Edit Profile for the new profile UI, even on accounts it has not been rolled out to. Takes effect after reopening Edit Profile; uploads are still validated by TikTok's servers.";
+"extra.profile_background_enabled.detail" = "Unlocks the profile background editor in Edit Profile. Reopen Edit Profile to apply.";
 "extra.enable_voice_messages.title" = "Enable Voice Messages";
 "extra.enable_voice_messages.detail" = "Forces on the chat voice message entrance where TikTok has it region-locked";
 "extra.remove_account_limit.title" = "Remove Logged-In Account Limit";
@@ -255,13 +255,13 @@
 "settings.app_icon.tap_to_apply" = "Tap to apply";
 "settings.app_icon.footer" = "Icons may take a moment to change on the Home Screen.";
 "settings.app_icon.unsupported" = "This device or install doesn't support alternate icons.";
-"settings.app_icon.signing_error" = "iOS refused the icon change. This usually means SpringBoard cached this app's icon info before the alternate icons existed — try fully restarting your device and try again. If it still fails after that, it's likely a hard restriction on this install method that can't be worked around from inside the tweak.";
+"settings.app_icon.signing_error" = "iOS refused the icon change. Fully restart your device and try again. If it still fails, this install method likely doesn't allow it.";
 "settings.hide_ui_button_mode.title" = "Hide UI Button Behavior";
 "settings.hide_ui_button_mode.menu" = "Ask Each Time";
 "settings.hide_ui_button_mode.this_video" = "This Video Only";
 "settings.hide_ui_button_mode.all" = "All Videos";
 "extra.ghost_mode.title" = "Ghost Mode";
-"extra.ghost_mode.detail" = "Anonymous story views, private profile visits, hidden chat read receipts and hidden typing indicator, all in one.";
+"extra.ghost_mode.detail" = "Anonymous story views, private profile visits, no read receipts or typing indicator.";
 "extra.hide_feed_tabs.title" = "Hide feed tabs";
 "extra.hide_feed_tabs.detail" = "Hide the Following / Friends / For You tab strip at the top of the feed.";
 "extra.hide_tab_slot_second.title" = "Hide friends tab";
@@ -284,4 +284,4 @@
 
 "extra.enable_comment_repost.title" = "Enable comment reposts";
 "extra.enable_comment_repost.detail" = "Turns on TikTok's repost-a-comment feature. Restart TikTok after changing.";
-"extra.hide_find_similar.detail" = "Removes the \"Find similar\" / \"Search this image\" buttons on paused videos and the shopping/visual-search tags (e.g. \"Sunglasses >\") drawn over photos.";
+"extra.hide_find_similar.detail" = "Removes \"Find similar\" / \"Search this image\" buttons and shopping tags on videos and photos.";
