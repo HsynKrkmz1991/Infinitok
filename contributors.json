@@ -17,12 +17,28 @@
                 "usernames": ["jaydenjcpy"],
                 "displayName": "Jayden",
                 "roles": ["Maintainer", "Developer"]
+            },
+            {
+                "usernames": ["raulsaeed"],
+                "displayName": "raulsaeed",
+                "roles": ["BHTiktok++ developer"]
+            },
+            {
+                "usernames": ["BandarHL"],
+                "displayName": "BandarHL",
+                "roles": ["BHTiktok developer"]
             }
         ]
     },
     {
         "title": "Localization",
         "shuffled": true,
-        "contributors": []
+        "contributors": [
+            {
+                "usernames": ["HsynKrkmz1991"],
+                "displayName": "Hüseyin Korkmaz",
+                "roles": ["Turkish"]
+            }
+        ]
     }
 ]
